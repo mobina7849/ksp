@@ -1,0 +1,22 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: vazir;
+    /* font-size: 62.5%; */
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --primary:#DE2910 !important;
+}
+
+.primary-color{
+    color: #DE2910;
+}
