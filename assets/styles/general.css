@@ -1,5 +1,4 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,16 +6,23 @@
     font-family: vazir;
     /* font-size: 62.5%; */
 }
-ul{
+
+ul {
     list-style-type: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-:root{
-    --primary:#DE2910 !important;
+
+:root {
+    --primary: #DE2910 !important;
 }
 
-.primary-color{
+.primary-color {
     color: #DE2910;
+}
+
+a {
+    cursor: pointer;
 }

@@ -1,235 +1,863 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-      <!--Normalize CSS-->
-      <link rel="stylesheet" href="/assets/styles/normalize.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-   <!-- Swiper CSS -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <!-- Custom CSS -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ksp</title>
+  <!--Normalize CSS-->
+  <link rel="stylesheet" href="/assets/styles/normalize.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Animate Css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Custom CSS -->
   <link href="assets/styles/main.css" rel="stylesheet">
   <link href="assets/styles/general.css" rel="stylesheet">
   <link href="assets/styles/swipers.css" rel="stylesheet">
 
   <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+  <script src="assets/js/script.js" type="module"></script>
+  <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  </head>
-  <body>
-        <!-- ======= Top Bar start======= -->
-        <section id="topBar">
-          <div class="top__bar d-flex align-items-center">
-            <div class="container d-flex align-items-center " style="justify-content: space-between;">
-              <div class="col-md-6 d-flex " style="color: aqua;">
-                <div class="d-md-flex d-none">
-                  <div class="top__bar__item text-nowrap">شبکه فروش</div>
-                  <div class="top__bar__item text-nowrap" >فروش قطعات یدکی</div>
-                  <div class="top__bar__item">خدمات</div>
-                  <div class="top__bar__item">اخبار</div>
-                  <div class="top__bar__item text-nowrap" style="border: none;">همکاری با ما</div>
-                </div>
-                <div class="d-flex d-md-none gap-3">
-                  <div class="d-flex align-items-center">
-                    <iconify-icon icon="bi:list"  style="color: #DE2910"></iconify-icon>
-                  </div>
-                  <div style="width: 28px;height: 38px;">
-                    <img src="assets/img/kspLogo.png" width="100%" height="100%"/>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 d-flex " style="color: blue;justify-content: flex-end;">
-                <div class="d-flex align-items-center gap-3">
-                  <div class="d-flex align-items-center">
-                    <iconify-icon icon="bi:search"  style="color: #393C41"></iconify-icon>
-                  </div>
-                  <div class="d-flex align-items-center ">
-                    <iconify-icon icon="bi:camera-video"  style="color: #393C41"></iconify-icon>
-                  </div>
-                  <div class="d-flex align-items-center ">
-                    <iconify-icon icon="bi:telephone"  style="color: #393C41"></iconify-icon>
-                  </div>
-                </div>
-              </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var menuPopover = new bootstrap.Popover(document.getElementById('menuPopover'), {
+        content: function () {
+          return document.getElementById('languageItems').innerHTML;
+        },
+        html: true
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var menuItems = document.querySelectorAll('.menu_devices div');
+      var hoveredImage = document.getElementById('hovered-image');
+      var newDevices = document.querySelector('.new__devices')
+      hoveredImage.style.display = 'none';
+      menuItems.forEach(function (item) {
+        item.addEventListener('mouseover', function () {
+          var imgUrl = item.getAttribute('data-img');
+          hoveredImage.src = imgUrl;
+          hoveredImage.style.display = 'block';
+          newDevices.style.display = 'none'
+        });
+
+        item.addEventListener('mouseout', function () {
+          hoveredImage.style.display = 'none';
+          newDevices.style.display = 'flex'
+
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- ======= Top Bar start======= -->
+</nav>
+  <section id="">
+    <div>
+      <nav class="navbar bg-body-tertiary py-1">
+        <div class="container-fluid">
+          <div class="d-lg-flex d-none py-1">
+            <a class="top__bar__item text-nowrap animate__zoomInLeft">شبکه فروش</a>
+            <a class="top__bar__item text-nowrap">فروش قطعات یدکی</a>
+            <a class="top__bar__item">خدمات</a>
+            <a class="top__bar__item">اخبار</a>
+            <a class="top__bar__item text-nowrap" style="border: none;">همکاری با ما</a>
+          </div>
+          <div class="d-flex d-lg-none align-items-center">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="width: 28px;height: 38px;">
+              <img src="assets/img/kspLogo.png" width="100%" height="100%" />
             </div>
           </div>
-        </section>
-        <!-- ======= Top Bar End======= -->
-        <!-- ======= hero start======= -->
-        <section id="hero">
-          <div style="background-image: url('assets/img/hero.png');    background-size: cover; /* Adjusts the image to cover the entire element */
+
+          <div class="col-md-6 d-flex " style="color: blue;justify-content: flex-end;">
+            <div class="d-flex align-items-center gap-3">
+              <a class="d-flex align-items-center">
+                <iconify-icon icon="bi:search" style="color: #393C41"></iconify-icon>
+              </a>
+              <a class="d-flex align-items-center ">
+                <iconify-icon icon="bi:camera-video" style="color: #393C41"></iconify-icon>
+              </a>
+              <a class="d-flex align-items-center ">
+                <iconify-icon icon="bi:telephone" style="color: #393C41"></iconify-icon>
+              </a>
+            </div>
+          </div>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <div style="width: 28px;height: 38px;">
+                <img src="assets/img/kspLogo.png" width="100%" height="100%" />
+              </div>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    محصولات
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">
+                      <div class="d-flex align-items-center gap-3">
+                        <img width="80px" src="assets/img/image 3.png"/>
+                        <div>فرز CNC</div>
+                      </div>
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                      <div class="d-flex align-items-center gap-3">
+                        <img width="80px" src="assets/img/image 2.png"/>
+                        <div>فرز اونیورسال</div>
+                      </div>
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                      <div class="d-flex align-items-center gap-3">
+                        <img width="80px" src="assets/img/image 5.png"/>
+                        <div>تراش اونیورسال</div>
+                      </div>
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                      <div class="d-flex align-items-center gap-3">
+                        <img width="80px" src="assets/img/image 6.png"/>
+                        <div>فرز CNC</div>
+                      </div>
+                    </a></li>
+                    <li class="d-flex justify-content-end mb-2"><a class="dropdown-item" href="#" style="border: 1px solid red; width: fit-content;border-radius: 4px;">نمایش همه محصولات</a></li>
+                    <hr class="dropdown-divider">
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    مطالب سایت
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">درباره ما</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">تصاویر 360 درجه</a>
+                </li>
+                <div class="d-flex flex-wrap gap-4 mt-5">
+                 <a class="dropdown-item py-1 px-2" href="#" style="border: 1px solid red; width: fit-content;border-radius: 4px;">فروش قطعات یدکی</a>
+                 <a class="dropdown-item py-1 px-2" href="#" style="border: 1px solid red; width: fit-content;border-radius: 4px;">نمایندگی ها</a>
+                 <a class="dropdown-item py-1 px-2" href="#" style="border: 1px solid red; width: fit-content;border-radius: 4px;">اخبار</a>
+                 <a class="dropdown-item py-1 px-2" href="#" style="border: 1px solid red; width: fit-content;border-radius: 4px;">خدمات</a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <!-- ======= Top Bar End======= -->
+  <!-- ======= hero start======= -->
+  <section id="hero">
+    <div style="background-image: url('assets/img/hero.png');    background-size: cover; /* Adjusts the image to cover the entire element */
           background-position: center; /* Centers the image */
           height: 100vh; /* Full viewport height */
           width: 100%;box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
 ">
-          <div class=" container d-flex justify-content-between align-items-center pt-2"> 
-            <div class="d-flex gap-2 ">
-              <p class="text-white d-none d-md-block">درباره ما</p>
-              <div class="d-flex">
-                <iconify-icon icon="arcticons:earth"  style="color: #fff; font-size: 24px;"></iconify-icon>
+
+      <div class=" container d-flex justify-content-between align-items-center pt-2">
+        <div class="d-flex gap-2 ">
+          <a href="#" class="text-white d-none d-md-block">درباره ما</a>
+          <div id="menuPopover"  tabindex="0" class="d-flex" data-bs-trigger="focus"  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+            <iconify-icon icon="arcticons:earth" style="color: #fff; font-size: 24px;"></iconify-icon>
+          </div>
+        </div>
+        <div class="d-lg-flex gap-4 d-none">
+         <a class="text-white " href="/">صفحه اصلی</a>
+         <div class="dropdown-center">
+            <a class=" dropdown-toggle text-white" href="#" role="menubar"  data-bs-toggle="dropdown" aria-expanded="false">
+              محصولات
+            </a>
+            <div class="dropdown-menu " style="width: 1100px;">
+              <div class="container bg-white d-flex py-5 justify-content-center ">
+                <div class="col-5 d-flex flex-wrap  menu_devices align-content-start" style="height: 400px;">
+                  <div data-img="assets/img/image1.png">دریل و دریل رادیال</div>
+                  <div data-img="assets/img/image2.png">دستگاه چند منطوره</div>
+                  <div data-img="assets/img/image3.png">خط کش و مانیتور دیجیتال</div>
+                  <div data-img="assets/img/image1.png">ماشین های سنگ زنی</div>
+                  <div data-img="assets/img/image2.png">Swiss Type</div>
+                  <div data-img="assets/img/image3.png">بورینگ</div>
+                  <div data-img="assets/img/image1.png">دستگاه برش لیزر-پانچ</div>
+                  <div data-img="assets/img/image2.png">ماشینهای EDM</div>
+                  <div data-img="assets/img/image3.png">تجهیزات و ابزارآلات صنعتی</div>
+                  <div data-img="assets/img/image1.png">تزریق پلاستیک</div>
+                  <div data-img="assets/img/image2.png">پرس</div>
+                  <div data-img="assets/img/image3.png">محصولات کارکرده</div>
+                  <div data-img="assets/img/image1.png">تراش رزوه زن لوله و مته های نفتی</div>
+            
+                </div>
+                <div class="col-1 mx-5" style="width: 1px;height: auto;background-color: #D9D9D9;"></div>
+                <div class="col-5">
+                  <div class="new__devices  gap-4 flex-wrap " style="display: flex;">
+                    <div class="d-flex flex-column align-items-center">
+                      <img src="assets/img/image 2.png" />
+                      <p>تراش CNC</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                      <img src="assets/img/image 5.png" />
+                      <p>فرز اونیورسال</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                      <img src="assets/img/image 6.png" />
+                      <p>تراش اونیورسال</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                      <img src="assets/img/image 3.png" />
+                      <p>فرز CNC</p>
+                    </div>
+            
+                  </div>
+                  <div class="image-container   animate__animated animate__bounce">
+                    <img id="hovered-image" src="" alt="Hovered Image" class="animate__animated animate__bounce">
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="d-md-flex gap-4 d-none">
-              <p class="text-white " >صفحه اصلی</p>
-              <p class="text-white "> محصولات</p>
-              <p class="text-white ">مطالب سایت</p>
-              <p class="text-white ">کاتالوگ</p>
-              <p class="text-white ">تصاویر 360 درجه</p>
+          </div>
+         <div class="dropdown-center">
+            <a class=" dropdown-toggle text-white" href="#" role="menubar"  data-bs-toggle="dropdown" aria-expanded="false">
+          مطالب سایت
+            </a>
+            <div class="dropdown-menu w-100" >
+              <div class="container bg-white d-flex py-5 justify-content-center ">
+                mjgrjgpj
+              </div>
             </div>
-            <div class="d-none d-md-block">
-              <img src="assets/img/kspLogo.png" />
-            </div>
           </div>
-          <div class="container" style="margin-top: 150px;">
-            <h1 class="text-white text-center text-md-end">
-              <span class="primary-color">خاوران</span>
-               صنعت پاسارگاد
-            </h1>
-            <h6 class="text-white text-center text-md-end">
-              برند برتر در زمینه ماشین ابزار در ایران
-            </h3>
-          </div>
+          <a href="#" class="text-white ">کاتالوگ</a>
+          <a href="#" class="text-white ">تصاویر 360 درجه</a>
+        </div>
+        <div class="d-none d-md-block">
+          <img src="assets/img/kspLogo.png" />
+        </div>
+      </div>
+      <div class="container" style="margin-top: 150px;">
+        <h1 class="text-white text-center text-md-end animate__animated animate__bounce">
+          <span class="primary-color">خاوران</span>
+          صنعت پاسارگاد
+        </h1>
+        <h6 class="text-white text-center text-md-end animate__animated animate__zoomInRight">
+          برند برتر در زمینه ماشین ابزار در ایران
+        </h6>
+      </div>
+      <div class="container bg-white d-flex align-items-center justify-content-center"
+        style="width:50px;height: 50px; position: absolute; bottom: 0;left: 45%;border-radius: 50%;">
+        <a href="#device-swipper" style="height: 35px;">
+          <iconify-icon icon="material-symbols:keyboard-arrow-down-rounded"
+            style="color: #000;font-size: 35px;"></iconify-icon>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ======= hero End======= -->
 
-          </div>
-        </section>
-      <!-- ======= hero End======= -->
 
-
-  <!-- Swiper -->
-  <section>
-    <div class="container py-5" >
+  <!-- Swiper Device Start-->
+  <section id="device-swipper">
+    <div class="container py-5">
       <h5>جدیدترین محصولات</h1>
+        <div class="swiper mySwiper py-4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
+                <img src="assets/img/image1.png" class="card-img-top" alt="..." style="border-radius: 12px;">
+                <div class="card-body">
+                  <p class="card-text">تراشCNC سی ان سی آکبند ریل مورب فانوک سری STL8-II</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
+                <img src="assets/img/image2.png" class="card-img-top" alt="..." style="border-radius: 12px;">
+                <div class="card-body">
+                  <p class="card-text">وایرکات cnc چینی آکبند سری DK7745</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
+                <img src="assets/img/image3.png" class="card-img-top" alt="..." style="border-radius: 12px;">
+                <div class="card-body">
+                  <p class="card-text">تراشCNC سی ان سی آکبند ریل مورب فانوک سری STL8-II</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
+                <img src="assets/img/image1.png" class="card-img-top" alt="..." style="border-radius: 12px;">
+                <div class="card-body">
+                  <p class="card-text">تراشCNC سی ان سی آکبند ریل مورب فانوک سری STL8-II</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
+                <img src="assets/img/image2.png" class="card-img-top" alt="..." style="border-radius: 12px;">
+                <div class="card-body">
+                  <p class="card-text">تراشCNC سی ان سی آکبند ریل مورب فانوک سری STL8-II</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
+                <img src="assets/img/image3.png" class="card-img-top" alt="..." style="border-radius: 12px;">
+                <div class="card-body">
+                  <p class="card-text">تراشCNC سی ان سی آکبند ریل مورب فانوک سری STL8-II</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
+                <img src="assets/img/image1.png" class="card-img-top" alt="..." style="border-radius: 12px;">
+                <div class="card-body">
+                  <p class="card-text">تراشCNC سی ان سی آکبند ریل مورب فانوک سری STL8-II</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
+                <img src="assets/img/image2.png" class="card-img-top" alt="..." style="border-radius: 12px;">
+                <div class="card-body">
+                  <p class="card-text">تراشCNC سی ان سی آکبند ریل مورب فانوک سری STL8-II</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
+                <img src="assets/img/image3.png" class="card-img-top" alt="..." style="border-radius: 12px;">
+                <div class="card-body">
+                  <p class="card-text">تراشCNC سی ان سی آکبند ریل مورب فانوک سری STL8-II</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-  <div class="swiper mySwiper py-4">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
-          <img src="assets/img/image1.png" class="card-img-top" alt="..." style="border-radius: 12px;" >
-          <div class="card-body">
-            <p class="card-text">تراشCNC  سی ان سی آکبند ریل مورب فانوک سری STL8-II</p>
-          </div>
         </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
-          <img src="assets/img/image2.png" class="card-img-top" alt="..." style="border-radius: 12px;" >
-          <div class="card-body">
-            <p class="card-text">وایرکات cnc  چینی آکبند سری DK7745</p>
+        <div class="d-flex  flex-column align-items-center justify-content-end">
+          <div class=" d-flex justify-content-center text-center align-items-center w-100 px-3">
+            <div class="custom-swiper-button-prev d-flex d-md-none">
+              <iconify-icon icon="ep:arrow-right-bold" style="color: #fff"></iconify-icon>
+            </div>
+            <div class="w-100">
+              <div class="custom-swiper-pagination"></div>
+            </div>
+            <div class="custom-swiper-button-next d-flex d-md-none ">
+              <iconify-icon icon="ep:arrow-left-bold" style="color: #fff"></iconify-icon>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
-          <img src="assets/img/image3.png" class="card-img-top" alt="..." style="border-radius: 12px;" >
-          <div class="card-body">
-            <p class="card-text">تراشCNC  سی ان سی آکبند ریل مورب فانوک سری STL8-II</p>
+          <div class="d-md-flex d-none justify-content-end w-100  ">
+            <div class="custom-swiper-button-prev ">
+              <iconify-icon icon="ep:arrow-right-bold" style="color: #fff"></iconify-icon>
+            </div>
+            <div class="custom-swiper-button-next ">
+              <iconify-icon icon="ep:arrow-left-bold" style="color: #fff"></iconify-icon>
+            </div>
           </div>
+
         </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
-          <img src="assets/img/image1.png" class="card-img-top" alt="..." style="border-radius: 12px;" >
-          <div class="card-body">
-            <p class="card-text">تراشCNC  سی ان سی آکبند ریل مورب فانوک سری STL8-II</p>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
-          <img src="assets/img/image2.png" class="card-img-top" alt="..." style="border-radius: 12px;" >
-          <div class="card-body">
-            <p class="card-text">تراشCNC  سی ان سی آکبند ریل مورب فانوک سری STL8-II</p>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
-          <img src="assets/img/image3.png" class="card-img-top" alt="..." style="border-radius: 12px;" >
-          <div class="card-body">
-            <p class="card-text">تراشCNC  سی ان سی آکبند ریل مورب فانوک سری STL8-II</p>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
-          <img src="assets/img/image1.png" class="card-img-top" alt="..." style="border-radius: 12px;" >
-          <div class="card-body">
-            <p class="card-text">تراشCNC  سی ان سی آکبند ریل مورب فانوک سری STL8-II</p>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
-          <img src="assets/img/image2.png" class="card-img-top" alt="..." style="border-radius: 12px;" >
-          <div class="card-body">
-            <p class="card-text">تراشCNC  سی ان سی آکبند ریل مورب فانوک سری STL8-II</p>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card p-2 " style="background-color: #F9F9F9;border-radius: 12px;border: none;">
-          <img src="assets/img/image3.png" class="card-img-top" alt="..." style="border-radius: 12px;" >
-          <div class="card-body">
-            <p class="card-text">تراشCNC  سی ان سی آکبند ریل مورب فانوک سری STL8-II</p>
-          </div>
-        </div>
-      </div>
-    </div>
+  </section>
+  <!-- Swiper Device End-->
+
 
   </div>
-  <div class="d-flex  flex-column align-items-center justify-content-end">
-    <div class=" d-flex justify-content-center text-center align-items-center w-100 px-3">
-      <div class="custom-swiper-button-prev d-flex d-md-none">
-        <iconify-icon icon="ep:arrow-right-bold"  style="color: #fff"></iconify-icon>
+  <!-- Swiper Logo Start-->
+
+  <section id="" class="my-5" style="background: #F3F3F3; ">
+    <div class="container py-5 d-flex align-items-center">
+      <div class="logo-swiper-button-prev">
+        <iconify-icon icon="ep:arrow-right-bold" style="color: #393C41;font-size: 25px;"></iconify-icon>
       </div>
-      <div class="w-100">
-        <div  class="custom-swiper-pagination"></div>
+      <div class="swiper logoSwiper py-2 px-2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="d-flex align-items-center justify-content-center logo__card">
+              <img class="logo__img" src="assets/img/companiesLogo/logo1.png" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="d-flex align-items-center justify-content-center logo__card">
+              <img class="logo__img" src="assets/img/companiesLogo/logo3.png" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="d-flex align-items-center justify-content-center logo__card">
+              <img class="logo__img" src="assets/img/companiesLogo/logo1.png" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="d-flex align-items-center justify-content-center logo__card">
+              <img class="logo__img" src="assets/img/companiesLogo/logo3.png" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="d-flex align-items-center justify-content-center logo__card">
+              <img class="logo__img" src="assets/img/companiesLogo/logo1.png" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="d-flex align-items-center justify-content-center logo__card">
+              <img class="logo__img" src="assets/img/companiesLogo/logo3.png" />
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="custom-swiper-button-next d-flex d-md-none ">
-        <iconify-icon icon="ep:arrow-left-bold"  style="color: #fff"></iconify-icon>
-       </div>
+      <div class="logo-swiper-button-next">
+        <iconify-icon icon="ep:arrow-left-bold" style="color: #393C41;font-size: 25px;"></iconify-icon>
+      </div>
+
     </div>
-    <div class="d-md-flex d-none justify-content-end w-100  ">
-      <div class="custom-swiper-button-prev ">
-        <iconify-icon icon="ep:arrow-right-bold"  style="color: #fff"></iconify-icon>
-      </div>
-      <div class="custom-swiper-button-next ">
-        <iconify-icon icon="ep:arrow-left-bold"  style="color: #fff"></iconify-icon>
-       </div>
-    </div>
- 
-  </div>
   </section>
 
+  <!-- Swiper Logo End-->
+
+
+  <!-- Introduction Start -->
+  <section id="" class="my-4" style="background: #F0F6FF;">
+    <div
+      class="container d-flex flex-column flex-md-row align-items-center py-4 justify-content-between gap-5 gap-md-0">
+      <div class="col-md-8">
+        <h5 class="text-center text-md-end mb-4">شرکت خاوران صنعت پاسارگاد</h5>
+        <div class="text-center text-md-end"> گروه خاوران صنعت پاسارگاد در سال 1389 ، در زمینه ماشین ابزار در ایران
+          تاسیس گردید . به واسطه سالها تجربه و اعتبار مدیران و پشتیبانی تخصصی در بازار ، گروه خاوران صنعت پاسارگاد
+          توانسته است به جایگاه های معتبری در بازار ایران دست یابد . مشتری مداری سرلوحه کار ماست و بمانند یک راهنما ما
+          را هدایت میکند . تحقیق و توسعه ، پرسنل فنی در کنار تیم متخصص فروش ، خاوران صنعت پاسارگاد را در میان سایر رقبا
+          پیشرو ، و در میان مشتریان معتبر و قابل اتکا ساخته است .
+          مجموعه خاوران صنعت پاسارگاد در زمینه فرز CNC، تراش CNC، دریل رادیال و انواع ماشین ابزار آماده خدمات رسانی به
+          شما مشتریان گرامی می باشد.</div>
+      </div>
+      <div class="col-md-3">
+        <img src="assets/img/kspGroup.png" />
+      </div>
+
+    </div>
+
+  </section>
+  <!-- Introduction End -->
+
+
+
+  <!-- Statistics Start -->
+  <section id="" class="statistics__section d-flex">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-4  py-md-5">
+      <div class="d-flex flex-column align-items-center gap-4 p-3  animate__animated animate__bounce"
+        style="background: rgba(237, 28, 36, 0.8); max-width: 300px;width: 100%;">
+        <div>
+          <img src="assets/img/svgs/exprience.svg" />
+        </div>
+        <div class="text-white">
+          <h6 class="text-center">
+            <div id="countup1">0</div>
+          </h6>
+          <p class="text-center">
+            سال تجربه کار در زمینه ماشین ابزار
+          </p>
+        </div>
+      </div>
+      <div class="d-flex flex-column align-items-center gap-4 p-3"
+        style="background: rgba(237, 28, 36, 0.8); max-width: 300px;width: 100%;">
+        <div>
+          <img src="assets/img/svgs/worker.svg" />
+        </div>
+        <div class="text-white">
+          <h6 class="text-center" id="countup2">
+            0
+          </h6>
+          <p class="text-center">
+            نفر پرسنل
+          </p>
+        </div>
+      </div>
+      <div class="d-flex flex-column align-items-center gap-4 p-3"
+        style="background: rgba(237, 28, 36, 0.8); max-width: 300px;width: 100%;">
+        <div>
+          <img src="assets/img/svgs/location.svg" />
+        </div>
+        <div class="text-white">
+          <h6 class="text-center" id="countup3">
+            0
+          </h6>
+          <p class="text-center">
+            نمایندگی در جهان </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Statistics End -->
+
+  <!-- Representation Start -->
+  <section id="" class="my-5">
+    <div class="container">
+      <h5> نمایندگی ها </h5>
+      <div>
+        <img width="100%" src="assets/img/earth.png" />
+      </div>
+    </div>
+  </section>
+  <!-- Representation End -->
+
+  <!-- News Start -->
+  <section id="" class="my-5">
+    <div
+      class="container d-flex flex-column-reverse flex-md-row justify-content-between align-items-center align-items-md-start gap-4">
+      <div class="col-11 col-md-4 custom__scrollbar ">
+        <div class="custom__scrollbar" style="max-height: 325px; overflow-y: auto;direction: ltr;">
+          <div class="p-2 d-flex align-items-center justify-content-between " style="border-bottom: 1px solid #E1E1E1;">
+            <div>
+              <img src="assets/img/news/news1.png" />
+            </div>
+            <p class="text-end">
+              سومین نمایشگاه بین المللی صنعت -تهران_شهرآفتاب
+            </p>
+          </div>
+          <div class="p-2 d-flex align-items-center justify-content-between" style="border-bottom: 1px solid #E1E1E1;">
+            <div>
+              <img src="assets/img/news/news2.png" />
+            </div>
+            <p>
+              تامین و فروش تراش چینی
+            </p>
+          </div>
+          <div class="p-2 d-flex align-items-center justify-content-between" style="border-bottom: 1px solid #E1E1E1;">
+            <div>
+              <img src="assets/img/news/news1.png" />
+            </div>
+            <p class="text-end">
+              سومین نمایشگاه بین المللی صنعت -تهران_شهرآفتاب
+            </p>
+          </div>
+          <div class="p-2 d-flex align-items-center justify-content-between" style="border-bottom: 1px solid #E1E1E1;">
+            <div>
+              <img src="assets/img/news/news2.png" />
+            </div>
+            <p>
+              تامین و فروش تراش چینی
+            </p>
+          </div>
+          <div class="p-2 d-flex align-items-center justify-content-between" style="border-bottom: 1px solid #E1E1E1;">
+            <div>
+              <img src="assets/img/news/news1.png" />
+            </div>
+            <p class="text-end">
+              سومین نمایشگاه بین المللی صنعت -تهران_شهرآفتاب
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4" style=" max-width: 400px;">
+        <div>
+          <img width="100%" src="assets/img/news/news3.png" />
+        </div>
+        <p>
+          فروش ویژه و تحویل روز دریل رادیال های بازو 80 چین و چک برند ZJ در بازار ایران </p>
+      </div>
+      <div class="col-12 col-md-4" style=" max-width: 400px;">
+        <div>
+          <img width="100%" src="assets/img/news/news4.png" />
+        </div>
+        <p>
+          تامین و تحویل روز وایرکات cnc آکبند در خاوران صنعت پاسارگاد
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <!-- News End -->
+
+  <!-- Footer Start -->
+  <section id="" class="bg-black" style="border-radius: 32px 32px 0 0;">
+    <div class="container">
+      <!-- Desktop Mobile -->
+      <div class="accordion d-lg-none py-5 px-4 " id="accordionPanelsStayOpenExample">
+        <div class="accordion-item bg-black text-white border-0">
+          <h2 class="accordion-header bg-black">
+            <button class="accordion-button bg-black text-white" style="box-shadow: none;" type="button"
+              data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne">
+              تماس با ما
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <div class=" text-white">
+                <div>
+                  <div class="d-flex">
+                    <iconify-icon icon="material-symbols:location-on-outline-rounded" class="mt-1"
+                      style="margin-left: 8px;font-size:22px;"></iconify-icon>
+                    <p>تهران - کیلومتر 10 جاده خاوران - روبروی توتک - پلاک 2456</p>
+                  </div>
+                  <div class="d-flex ">
+                    <iconify-icon icon="material-symbols:call-outline-sharp" class="mt-1"
+                      style="margin-left: 8px;font-size:22px;"></iconify-icon>
+                    <p>021-38467000</p>
+                  </div>
+                  <div class="d-flex">
+                    <iconify-icon icon="material-symbols:deskphone-outline" class="mt-1"
+                      style="margin-left: 8px;font-size:22px;"></iconify-icon>
+                    <p> 021-38467000 داخلی 8</p>
+                  </div>
+                  <div class="d-flex">
+                    <iconify-icon icon="material-symbols:attach-email-outline" class="mt-1"
+                      style="margin-left: 8px;font-size:22px;"></iconify-icon>
+                    <p>sales@ksp-group.ir</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-black text-white border-0">
+          <h2 class="accordion-header bg-black">
+            <button class="accordion-button collapsed bg-black text-white" style="box-shadow: none;" type="button"
+              data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo">
+              نمایشگاه ها
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <div>
+                <p>
+                  سومین نمایشگاه بین المللی صنعت - تهران _شهرآفتاب شهریور ماه 1402
+                </p>
+                <p>
+                  سومین نمایشگاه بین المللی صنعت - تهران _شهرآفتاب شهریور ماه 1402
+                </p>
+                <p>
+                  سومین نمایشگاه بین المللی صنعت - تهران _شهرآفتاب شهریور ماه 1402
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-black text-white border-0">
+          <h2 class="accordion-header bg-black">
+            <button class="accordion-button collapsed bg-black text-white" style="box-shadow: none;" type="button"
+              data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree">
+              مطالب مهم سایت
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <div>
+                <p>
+                  شرکت کیتامورا Kitamura تولید کننده انواع فرز cnc عمودی ، افقی ، دروازه ای و فرز پنج محور و ... ، ژاپن
+                </p>
+                <p>
+                  شرکت کیتامورا Kitamura تولید کننده انواع فرز cnc عمودی ، افقی ، دروازه ای و فرز پنج محور و ... ، ژاپن
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Desktop Footer -->
+      <div class="d-none d-lg-flex  py-5 gap-4 flex-wrap">
+        <div class="col-2 text-white align-self-center">
+          <div class="d-flex align-items-center ">
+            <div>
+              <img src="assets/img/kspLogo.png" />
+            </div>
+            <h5>
+              خاوران صنعت پاسارگاد
+            </h5>
+          </div>
+          <p>
+            تمام حقوق مادی و معنوی این وبسایت متعلق به خاوران صنعت پاسارگاد می باشد.
+          </p>
+        </div>
+        <div class="col-3 text-white">
+          <p class="text-center">
+            تماس با ما
+          </p>
+          <div>
+            <div class="d-flex">
+              <iconify-icon icon="material-symbols:location-on-outline-rounded" class="mt-1"
+                style="margin-left: 8px;font-size:22px;"></iconify-icon>
+              <p>تهران - کیلومتر 10 جاده خاوران - روبروی توتک - پلاک 2456</p>
+            </div>
+            <div class="d-flex ">
+              <iconify-icon icon="material-symbols:call-outline-sharp" class="mt-1"
+                style="margin-left: 8px;font-size:22px;"></iconify-icon>
+              <p>021-38467000</p>
+            </div>
+            <div class="d-flex">
+              <iconify-icon icon="material-symbols:deskphone-outline" class="mt-1"
+                style="margin-left: 8px;font-size:22px;"></iconify-icon>
+              <p> 021-38467000 داخلی 8</p>
+            </div>
+            <div class="d-flex">
+              <iconify-icon icon="material-symbols:attach-email-outline" class="mt-1"
+                style="margin-left: 8px;font-size:22px;"></iconify-icon>
+              <p>sales@ksp-group.ir</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 text-white">
+          <p class="text-center">
+            نمایشگاه ها
+          </p>
+          <div>
+            <p>
+              سومین نمایشگاه بین المللی صنعت - تهران _شهرآفتاب شهریور ماه 1402
+            </p>
+            <p>
+              سومین نمایشگاه بین المللی صنعت - تهران _شهرآفتاب شهریور ماه 1402
+            </p>
+            <p>
+              سومین نمایشگاه بین المللی صنعت - تهران _شهرآفتاب شهریور ماه 1402
+            </p>
+          </div>
+        </div>
+        <div class="col-3 text-white">
+          <p class="text-center">
+            مطالب مهم سایت
+          </p>
+          <div>
+            <p>
+              شرکت کیتامورا Kitamura تولید کننده انواع فرز cnc عمودی ، افقی ، دروازه ای و فرز پنج محور و ... ، ژاپن
+            </p>
+            <p>
+              شرکت کیتامورا Kitamura تولید کننده انواع فرز cnc عمودی ، افقی ، دروازه ای و فرز پنج محور و ... ، ژاپن
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex  justify-content-center justify-content-lg-end gap-2 pb-3 flex-wrap">
+        <div class="d-flex align-items-center justify-content-center "
+          style="width: 34px;height: 34px; border-radius: 50%;background-color: #fff;">
+          <iconify-icon icon="material-symbols:call-outline-sharp" class=" text-black"
+            style="font-size:22px;"></iconify-icon>
+        </div>
+        <div class="d-flex align-items-center justify-content-center "
+          style="width: 34px;height: 34px; border-radius: 50%;background-color: #fff;">
+          <iconify-icon icon="material-symbols:attach-email-outline" class=" text-black"
+            style="font-size:22px;"></iconify-icon>
+        </div>
+        <div class="d-flex align-items-center justify-content-center "
+          style="width: 34px;height: 34px; border-radius: 50%;background-color: #fff;">
+          <iconify-icon icon="iconoir:facebook" class=" text-black" style="font-size:22px;"></iconify-icon>
+        </div>
+        <div class="d-flex align-items-center justify-content-center "
+          style="width: 34px;height: 34px; border-radius: 50%;background-color: #fff;">
+          <iconify-icon icon="simple-icons:aparat" class=" text-black" style="font-size:22px;"></iconify-icon>
+        </div>
+        <div class="d-flex align-items-center justify-content-center "
+          style="width: 34px;height: 34px; border-radius: 50%;background-color: #fff;">
+          <iconify-icon icon="mdi:instagram" class=" text-black" style="font-size:22px;"></iconify-icon>
+        </div>
+        <div class="d-flex align-items-center justify-content-center "
+          style="width: 34px;height: 34px; border-radius: 50%;background-color: #fff;">
+          <iconify-icon icon="iconoir:telegram" class=" text-black" style="font-size:22px;"></iconify-icon>
+        </div>
+        <div class="d-flex align-items-center justify-content-center "
+          style="width: 34px;height: 34px; border-radius: 50%;background-color: #fff;">
+          <iconify-icon icon="ant-design:youtube-outlined" class=" text-black" style="font-size:22px;"></iconify-icon>
+        </div>
+      </div>
+      <p class="text-center text-white d-lg-none pb-3 m-0">
+        تمام حقوق مادی و معنوی این وبسایت متعلق به خاوران صنعت پاسارگاد می باشد.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer End -->
+
+    <!-- Hidden div containing the language item -->
+  <div class="d-none" id="languageItems">
+    <div class="d-flex flex-column align-items-end gap-2">
+    <div class="d-flex align-items-center gap-2">
+      <div>فارسی</div>
+      <img src="assets/img/svgs/emojione_flag-for-iran.svg"/>
+    </div>
+    <div class="d-flex align-items-center gap-2">
+      <div>انگلیسی</div>
+      <img src="assets/img/svgs/emojione_flag-for-united-kingdom.svg"/>
+    </div>
   </div>
+  </div>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  </script>
 
 
-
-
-            <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-       <!-- Swiper JS -->
-       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-       <script>
-        var mediaQuery = window.matchMedia("(max-width: 767px)").matches;
-console.log(mediaQuery,'mediaQuery');
-var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.menu-item').hover(function(){
+        $('#myModal').modal('show');
+      }, function(){
+        // Optional: You can hide the modal when the mouse leaves the menu item.
+        // $('#myModal').modal('hide');
+      });
+    });
+  </script>
+  <script>
+    const popover = new bootstrap.Popover('.popover-dismiss', {
+  trigger: 'focus'
+})
+  </script>
+  
+  <script>
+    var mediaQuery = window.matchMedia("(max-width: 767px)").matches;
+    console.log(mediaQuery, 'mediaQuery');
+    var swiper = new Swiper(".mySwiper", {
       freeMode: true,
-      breakpoints:{
-        1800:{
+      spaceBetween: 30,
+      loop: true,
+      breakpoints: {
+        1800: {
           slidesPerView: 5,
         },
-        1220:{
+        1220: {
           slidesPerView: 4,
         },
-        768:{
+        768: {
           slidesPerView: 3,
+
         },
-        100:{
+        100: {
           slidesPerView: 1,
+
         }
 
       },
@@ -238,41 +866,52 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
         dynamicBullets: false,
         renderBullet: function (index, className) {
-        return '<span class=" ' + className + ' bullet" style="height:4px;border-radius:0 ">' + '' + "</span>";
+          return '<span class=" ' + className + ' bullet" style="height:4px;border-radius:0 ">' + '' + "</span>";
         },
       },
-      autoplay:{
-        delay:3000
+      autoplay: {
+        delay: 3000
       },
-        // Navigation arrows
-  navigation: {
-    nextEl: '.custom-swiper-button-next',
-    prevEl: '.custom-swiper-button-prev',
-  },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.custom-swiper-button-next',
+        prevEl: '.custom-swiper-button-prev',
+      },
     });
-//         const swiper = new Swiper('.swiper', {
-//   // Optional parameters
-//   // direction: 'vertical',
-//   loop: true,
+  </script>
+  <script>
+    var swiper = new Swiper(".logoSwiper", {
+      slidesPerView: 2,
+      loop: true,
+      spaceBetween: 30,
+      freeMode: true,
+      breakpoints: {
+        1800: {
+          slidesPerView: 5,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 30,
 
-//   // If we need pagination
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
+        },
+        100: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        }
+      },
+      autoplay: {
+        delay: 3000
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.logo-swiper-button-next',
+        prevEl: '.logo-swiper-button-prev',
+      },
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.8/countUp.min.js"></script>
 
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
 
-//   // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
-// });
-       </script>
+</body>
 
-
-  </body>
 </html>

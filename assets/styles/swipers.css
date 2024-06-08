@@ -7,7 +7,7 @@
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,4 +45,8 @@
   align-items: center;
   justify-content: center;
   margin: 4px;
+}
+
+.swiper-button-next,.swiper-button-prev {
+color: #393C41;
 }
