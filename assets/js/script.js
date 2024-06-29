@@ -14,3 +14,9 @@ window.addEventListener('load', () => {
   countup2.start()
   countup3.start()
 })
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+
+
+.main__img{
+    height: 200px;
+}
+
+@media (min-width: 900px) {
+    .main__img {
+        height: 400px;
+
+    }
+}

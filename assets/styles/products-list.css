@@ -1,0 +1,23 @@
+.product {
+    border: 1px solid #ED1C24 ;
+    border-radius: 4px;
+}
+
+.more__detail--button{
+    margin: 12px;
+    width:-webkit-fill-available;
+    background-color: #ED1C24;
+    border: 1px solid #ED1C24 ;
+    border-radius: 4px;
+    color:#fff;
+}
+
+.product:hover{
+    border:1px solid transparent;
+    background-color: #f3f3f3;
+}
+
+.product:hover .more__detail--button {
+    background-color: #fff;
+    color: #000;
+}

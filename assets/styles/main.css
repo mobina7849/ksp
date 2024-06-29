@@ -94,5 +94,7 @@
     padding: 16px;
 }
 
-
+a, a:hover{
+    color: black;
+}
   
