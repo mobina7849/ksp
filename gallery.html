@@ -18,88 +18,16 @@
     <link href="assets/styles/main.css" rel="stylesheet">
     <link href="assets/styles/general.css" rel="stylesheet">
     <link href="assets/styles/swipers.css" rel="stylesheet">
-
+    <!-- iconify CDN -->
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <!-- Custom Js -->
     <script src="assets/js/script.js" type="module"></script>
+    <script src="assets/js/handleGalleryImg.js"></script>
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var menuPopover = new bootstrap.Popover(document.getElementById('menuPopover'), {
-                content: function () {
-                    return document.getElementById('languageItems').innerHTML;
-                },
-                html: true
-            });
-        });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var hoverButtons = document.querySelectorAll('.hoverButton');
-            var targetModals = document.querySelectorAll('.targetModal');
-            var deviceshoverModal = new bootstrap.Modal(document.getElementById('deviceshoverModal'));
-
-            hoverButtons.forEach(function (item) {
-                item.addEventListener('mouseenter', function () {
-                    var modaltype = item.getAttribute('data-modal');
-                    var modalElement = document.getElementById(modaltype)
-
-                    targetModals.forEach(function (item) {
-                        item.style.display = 'none'
-                    })
-                    deviceshoverModal.show();
-                    modalElement.style.display = 'block'
-                });
-            });
-        });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var modalMenuItems = document.querySelectorAll('.modalMenuItem')
-            var targetModals = document.querySelectorAll('.targetModal');
-
-            modalMenuItems.forEach(function (item) {
-                item.addEventListener('mouseenter', function () {
-                    var modaltype = item.getAttribute('data-modal');
-                    var modalElement = document.getElementById(modaltype)
-                    modalMenuItems.forEach(function (item) {
-                        item.style.background = 'none'
-                    })
-                    targetModals.forEach(function (item) {
-                        item.style.display = 'none'
-                    })
-                    modalElement.style.display = 'block'
-                    item.style.background = '#F2F2F2'
-
-                });
-            });
-        })
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var menuItems = document.querySelectorAll('.menu_devices div');
-            var hoveredImage = document.getElementById('hovered-image');
-            var newDevices = document.querySelector('.new__devices')
-            hoveredImage.style.display = 'none';
-            menuItems.forEach(function (item) {
-                item.addEventListener('mouseover', function () {
-                    var imgUrl = item.getAttribute('data-img');
-                    hoveredImage.src = imgUrl;
-                    hoveredImage.style.display = 'block';
-                    newDevices.style.display = 'none'
-                });
-
-                item.addEventListener('mouseout', function () {
-                    hoveredImage.style.display = 'none';
-                    newDevices.style.display = 'flex'
-
-                });
-            });
-        });
-    </script>
     <style>
         .gallery {
             position: relative;
@@ -376,8 +304,8 @@
     <section id="">
         <div class="container d-flex justify-content-evenly align-items-center flex-wrap gap-3 my-5">
             <div class="col-12 col-md-3  d-md-none p-3" id="content">
-                <div class="d-flex justify-content-center mb-3 " >
-                    <img src="" style="max-width: 100%;" id="selected-img"/>
+                <div class="d-flex justify-content-center mb-3 ">
+                    <img src="" style="max-width: 100%;" id="selected-img" />
                 </div>
                 <div id="selected-image-content-mobile" class="text-center"></div>
                 <div class="py-3 d-flex justify-content-center">
@@ -426,7 +354,7 @@
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-  
+
 
 
 
@@ -773,48 +701,6 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                // Get all images with the class 'img-thumbnail'
-                const thumbnails = document.querySelectorAll('.img-thumbnail');
-                thumbnails[0].classList.add('selected')
-                const content = thumbnails[0].getAttribute('data-content');
-                const href = thumbnails[0].getAttribute('data-href');
-                const src = thumbnails[0].getAttribute('src');
-    
-                // Display the content at the top of the page
-                document.getElementById('selected-image-content-desktop').textContent = content;
-                document.getElementById('selected-image-content-mobile').textContent = content;
-                document.getElementById('more-detail-mobile').href = href;
-                        document.getElementById('more-detail-desktop').href = href;
-                document.getElementById('selected-img').src=src
-    
-                // Add click event listener to each image
-                thumbnails.forEach(thumbnail => {
-                    thumbnail.addEventListener('click', function () {
-                        // Remove red border from all images
-                        thumbnails.forEach(img => img.classList.remove('selected'));
-    
-                        // Add red border to the clicked image
-                        this.classList.add('selected');
-    
-                        // Get the content related to the clicked image
-                        const content = this.getAttribute('data-content');
-                        const href = this.getAttribute('data-href');
-                        const src = this.getAttribute('src');
-    
-    
-                        // Display the content at the top of the page
-                        document.getElementById('selected-image-content-desktop').textContent = content;
-                        document.getElementById('selected-image-content-mobile').textContent = content;
-                        document.getElementById('more-detail-mobile').href = href;
-                        document.getElementById('more-detail-desktop').href = href;
-                        document.getElementById('selected-img').src=src
-    
-                    });
-                });
-            });
-        </script>
 </body>
 
 </html>
