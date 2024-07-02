@@ -29,8 +29,8 @@
     .nav-tabs .nav-item.show .nav-link,
     .nav-tabs .nav-link.active {
       border: none;
-      border-bottom: 4px solid red;
-      color: red;
+      border-bottom: 4px solid #DE2910;
+      color:#DE2910;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px
     }
@@ -38,6 +38,11 @@
     .nav-tabs .nav-link {
       color: #000;
     }
+    .form-control:focus {
+        border-color: #DE2910;
+        box-shadow: none;
+    }
+    
   </style>
 </head>
 
@@ -233,136 +238,200 @@
   <section id="">
     <div class="container">
 
-      <ul class="nav nav-tabs my-3" id="myTab" role="tablist">
+      <ul class="nav nav-tabs my-3 pb-2 pb-lg-0" id="myTab" role="tablist" style="flex-wrap: nowrap;overflow-x: auto;overflow-y: hidden;">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="news-tab" data-bs-toggle="tab" data-bs-target="#news" type="button"
-            role="tab" aria-controls="news" aria-selected="true">اخبار</button>
+          <button class="nav-link active" style="white-space: nowrap;" id="news-tab" data-bs-toggle="tab" data-bs-target="#news" type="button"
+            role="tab" aria-controls="news" aria-selected="true">اعضای هیئت مدیره</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-            role="tab" aria-controls="profile" aria-selected="false">نمایشگاه ها</button>
+          <button class="nav-link" id="profile-tab" style="white-space: nowrap;" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+            role="tab" aria-controls="profile" aria-selected="false">واحد فروش</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" style="white-space: nowrap;" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+            role="tab" aria-controls="profile" aria-selected="false">واحد مدیریت داخلی</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" style="white-space: nowrap;" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+            role="tab" aria-controls="profile" aria-selected="false">واحد مالی</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" style="white-space: nowrap;" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+            role="tab" aria-controls="profile" aria-selected="false">واحد تحقیق و توسعه</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" style="white-space: nowrap;" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+            role="tab" aria-controls="profile" aria-selected="false">فنی و خدمات پس از فروش</button>
         </li>
 
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="news" role="tabpanel" aria-labelledby="news-tab">
           <div class="d-flex my-5 justify-content-evenly flex-wrap gap-3">
-            <div class=" col-5 col-md-3  animate__animated animate__backInUp " style="background-color: #F3F3F3;border-radius: 8px;">
-              <div>
-                <img class="w-100" src="assets/img/news/news4.png" />
-              </div>
-              <div class="p-3">
-                تامین و تحویل روز وایرکات cnc آکبند در خاوران صنعت پاسارگاد
-              </div>
-              <a href="#" class="d-flex justify-content-end p-3">
-                <div class="d-flex align-items-center">
-                  <iconify-icon icon="bi:arrow-right-short" width="1.5em" height="1.5em"
-                    style="color: red"></iconify-icon>
+            <div class="d-flex flex-column align-items-center col-10 col-md-3 p-3 animate__animated animate__rubberBand " style="background-color: #F0F6FF;" >
+                <div>
+                    <img style="border-radius: 50%;" src="assets/img/person.png" />
                 </div>
-                <div style="color: red;">ادامه مطلب</div>
-
-              </a>
-            </div>
-            <div class="col-5 col-md-3  animate__animated animate__backInUp" style="background-color: #F3F3F3;border-radius: 8px;">
-              <div>
-                <img class="w-100" src="assets/img/news/news4.png" />
-              </div>
-              <div class="p-3">
-                تامین و تحویل روز وایرکات cnc آکبند در خاوران صنعت پاسارگاد
-              </div>
-              <a href="#" class="d-flex justify-content-end p-3">
-                <div class="d-flex align-items-center">
-                  <iconify-icon icon="bi:arrow-right-short" width="1.5em" height="1.5em"
-                    style="color: red"></iconify-icon>
+                <p class="mt-2" style="font-weight: bold;">
+                    مهدی محمدی
+                </p>
+                <p class="text-center" style="color: #ED1C24;">
+                    کارشناس شبکه های اجتماعی
+                </p>
+                <div class="d-flex align-items-center gap-2">
+                    <iconify-icon icon="bi:telephone" class="d-none d-lg-block"  width="1.5em" height="1.5em"  style="color: black"></iconify-icon>
+                                                            <div style="white-space: nowrap;">
+                        (داخلی 102) 02138467000
+                    </div>
                 </div>
-                <div style="color: red;">ادامه مطلب</div>
-
-              </a>
-            </div>
-            <div class="col-5 col-md-3  animate__animated animate__backInUp" style="background-color: #F3F3F3;border-radius: 8px;">
-              <div>
-                <img class="w-100" src="assets/img/news/news4.png" />
-              </div>
-              <div class="p-3">
-                تامین و تحویل روز وایرکات cnc آکبند در خاوران صنعت پاسارگاد
-              </div>
-              <a href="#" class="d-flex justify-content-end p-3">
-                <div class="d-flex align-items-center">
-                  <iconify-icon icon="bi:arrow-right-short" width="1.5em" height="1.5em"
-                    style="color: red"></iconify-icon>
+                <div class="d-flex align-items-center gap-2">
+                    <iconify-icon icon="bi:envelope" class="d-none d-lg-block"  width="1.5em" height="1.5em" style="color: black"></iconify-icon>
+                    <div  style="white-space: nowrap;">
+                        Generalmanager@ksp-group.ir
+                                        </div>
                 </div>
-                <div style="color: red;">ادامه مطلب</div>
-
-              </a>
             </div>
-            <div class="col-5 col-md-3  mb-3  animate__animated animate__backInUp" style="background-color: #F3F3F3;border-radius: 8px;">
-              <div>
-                <img class="w-100" src="assets/img/news/news4.png" />
-              </div>
-              <div class="p-3">
-                تامین و تحویل روز وایرکات cnc آکبند در خاوران صنعت پاسارگاد
-              </div>
-              <a href="#" class="d-flex justify-content-end p-3">
-                <div class="d-flex align-items-center">
-                  <iconify-icon icon="bi:arrow-right-short" width="1.5em" height="1.5em"
-                    style="color: red"></iconify-icon>
+            <div class="d-flex flex-column align-items-center col-10 col-md-3 p-3 animate__animated animate__rubberBand " style="background-color: #F0F6FF;" >
+                <div>
+                    <img style="border-radius: 50%;" src="assets/img/person.png" />
                 </div>
-                <div style="color: red;">ادامه مطلب</div>
-
-              </a>
+                <p class="mt-2" style="font-weight: bold;">
+                    مهدی محمدی
+                </p>
+                <p class="text-center" style="color: #ED1C24;">
+                    کارشناس شبکه های اجتماعی
+                </p>
+                <div class="d-flex align-items-center gap-2">
+                    <iconify-icon icon="bi:telephone" class="d-none d-lg-block"  width="1.5em" height="1.5em"  style="color: black"></iconify-icon>
+                                                            <div style="white-space: nowrap;">
+                        (داخلی 102) 02138467000
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <iconify-icon icon="bi:envelope" class="d-none d-lg-block"  width="1.5em" height="1.5em" style="color: black"></iconify-icon>
+                    <div  style="white-space: nowrap;">
+                        Generalmanager@ksp-group.ir
+                                        </div>
+                </div>
             </div>
-
+            <div class="d-flex flex-column align-items-center col-10 col-md-3 p-3 animate__animated animate__rubberBand " style="background-color: #F0F6FF;" >
+                <div>
+                    <img style="border-radius: 50%;" src="assets/img/person.png" />
+                </div>
+                <p class="mt-2" style="font-weight: bold;">
+                    مهدی محمدی
+                </p>
+                <p class="text-center" style="color: #ED1C24;">
+                    کارشناس شبکه های اجتماعی
+                </p>
+                <div class="d-flex align-items-center gap-2">
+                    <iconify-icon icon="bi:telephone" class="d-none d-lg-block"  width="1.5em" height="1.5em"  style="color: black"></iconify-icon>
+                                                            <div style="white-space: nowrap;">
+                        (داخلی 102) 02138467000
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <iconify-icon icon="bi:envelope" class="d-none d-lg-block"  width="1.5em" height="1.5em" style="color: black"></iconify-icon>
+                    <div  style="white-space: nowrap;">
+                        Generalmanager@ksp-group.ir
+                                        </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center col-10 col-md-3 p-3 animate__animated animate__rubberBand " style="background-color: #F0F6FF;" >
+                <div>
+                    <img style="border-radius: 50%;" src="assets/img/person.png" />
+                </div>
+                <p class="mt-2" style="font-weight: bold;">
+                    مهدی محمدی
+                </p>
+                <p class="text-center" style="color: #ED1C24;">
+                    کارشناس شبکه های اجتماعی
+                </p>
+                <div class="d-flex align-items-center gap-2">
+                    <iconify-icon icon="bi:telephone" class="d-none d-lg-block"  width="1.5em" height="1.5em"  style="color: black"></iconify-icon>
+                                                            <div style="white-space: nowrap;">
+                        (داخلی 102) 02138467000
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <iconify-icon icon="bi:envelope" class="d-none d-lg-block"  width="1.5em" height="1.5em" style="color: black"></iconify-icon>
+                    <div  style="white-space: nowrap;">
+                        Generalmanager@ksp-group.ir
+                                        </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center col-10 col-md-3 p-3 animate__animated animate__rubberBand " style="background-color: #F0F6FF;" >
+                <div>
+                    <img style="border-radius: 50%;" src="assets/img/person.png" />
+                </div>
+                <p class="mt-2" style="font-weight: bold;">
+                    مهدی محمدی
+                </p>
+                <p class="text-center" style="color: #ED1C24;">
+                    کارشناس شبکه های اجتماعی
+                </p>
+                <div class="d-flex align-items-center gap-2">
+                    <iconify-icon icon="bi:telephone" class="d-none d-lg-block"  width="1.5em" height="1.5em"  style="color: black"></iconify-icon>
+                                                            <div style="white-space: nowrap;">
+                        (داخلی 102) 02138467000
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <iconify-icon icon="bi:envelope" class="d-none d-lg-block"  width="1.5em" height="1.5em" style="color: black"></iconify-icon>
+                    <div  style="white-space: nowrap;">
+                        Generalmanager@ksp-group.ir
+                                        </div>
+                </div>
+            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
           <div class="d-flex my-5 justify-content-evenly flex-wrap gap-3">
-            <div class="col-5 col-md-3  animate__animated animate__backInUp" style="background-color: #F3F3F3;border-radius: 8px;">
-              <div>
-                <img class="w-100" src="assets/img/news/news3.png" />
-              </div>
-              <div class="p-3">
-                تامین و تحویل روز وایرکات cnc آکبند در خاوران صنعت پاسارگاد
-              </div>
-              <a href="#" class="d-flex justify-content-end p-3">
-                <div class="d-flex align-items-center">
-                  <iconify-icon icon="bi:arrow-right-short" width="1.5em" height="1.5em"
-                    style="color: red"></iconify-icon>
+            <div class="d-flex flex-column align-items-center col-10 col-md-3 p-3 animate__animated animate__rubberBand " style="background-color: #F0F6FF;" >
+                <div>
+                    <img style="border-radius: 50%;" src="assets/img/person.png" />
                 </div>
-                <div style="color: red;">ادامه مطلب</div>
-
-              </a>
+                <p class="mt-2" style="font-weight: bold;">
+                    مهدی محمدی
+                </p>
+                <p class="text-center" style="color: #ED1C24;">
+                    مدیر عامل و عضو هیئت مدیره
+                </p>
+                <div class="d-flex align-items-center gap-2">
+                    <iconify-icon icon="bi:telephone" class="d-none d-lg-block"  width="1.5em" height="1.5em"  style="color: black"></iconify-icon>
+                                                            <div style="white-space: nowrap;">
+                        (داخلی 102) 02138467000
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <iconify-icon icon="bi:envelope" class="d-none d-lg-block"  width="1.5em" height="1.5em" style="color: black"></iconify-icon>
+                    <div  style="white-space: nowrap;">
+                        Generalmanager@ksp-group.ir
+                                        </div>
+                </div>
             </div>
-            <div class="col-5 col-md-3  animate__animated animate__backInUp" style="background-color: #F3F3F3;border-radius: 8px;">
-              <div>
-                <img class="w-100" src="assets/img/news/news3.png" />
-              </div>
-              <div class="p-3">
-                تامین و تحویل روز وایرکات cnc آکبند در خاوران صنعت پاسارگاد
-              </div>
-              <a href="#" class="d-flex justify-content-end p-3">
-                <div class="d-flex align-items-center">
-                  <iconify-icon icon="bi:arrow-right-short" width="1.5em" height="1.5em"
-                    style="color: red"></iconify-icon>
+            <div class="d-flex flex-column align-items-center col-10 col-md-3 p-3 animate__animated animate__rubberBand " style="background-color: #F0F6FF;" >
+                <div>
+                    <img style="border-radius: 50%;" src="assets/img/person.png" />
                 </div>
-                <div style="color: red;">ادامه مطلب</div>
-
-              </a>
-            </div>
-            <div class="col-5 col-md-3  animate__animated animate__backInUp" style="background-color: #F3F3F3;border-radius: 8px;">
-              <div>
-                <img class="w-100" src="assets/img/news/news3.png" />
-              </div>
-              <div class="p-3">
-                تامین و تحویل روز وایرکات cnc آکبند در خاوران صنعت پاسارگاد
-              </div>
-              <a href="#" class="d-flex justify-content-end p-3">
-                <div class="d-flex align-items-center">
-                  <iconify-icon icon="bi:arrow-right-short" width="1.5em" height="1.5em"
-                    style="color: red"></iconify-icon>
+                <p class="mt-2" style="font-weight: bold;">
+                    مهدی محمدی
+                </p>
+                <p class="text-center" style="color: #ED1C24;">
+                    مدیر عامل و عضو هیئت مدیره
+                </p>
+                <div class="d-flex align-items-center gap-2">
+                    <iconify-icon icon="bi:telephone" class="d-none d-lg-block"  width="1.5em" height="1.5em"  style="color: black"></iconify-icon>
+                                                            <div style="white-space: nowrap;">
+                        (داخلی 102) 02138467000
+                    </div>
                 </div>
-                <div style="color: red;">ادامه مطلب</div>
-
-              </a>
+                <div class="d-flex align-items-center gap-2">
+                    <iconify-icon icon="bi:envelope" class="d-none d-lg-block"  width="1.5em" height="1.5em" style="color: black"></iconify-icon>
+                    <div  style="white-space: nowrap;">
+                        Generalmanager@ksp-group.ir
+                                        </div>
+                </div>
             </div>
 
           </div>
@@ -371,6 +440,76 @@
     </div>
   </section>
   <!-- ======= Tabs End======= -->
+
+
+  <!-- ======= Form Start======= -->
+  <section id="">
+    <div class="container my-5" >
+    <h6 class="mb-3">تماس با ما</h6>
+    <div class="d-flex p-4  mx-2 flex-wrap align-items-center " style="box-shadow: 4px 4px 18px 0px #00000040; ">
+        <form class="col-12 col-lg-8 d-flex gap-md-3 flex-wrap">
+            <div class="mb-3 col-12 col-lg-5 ">
+                <label for="exampleFormControlInput1" class="form-label">نام و نام خانوادگی</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" >
+              </div>
+              <div class="mb-3 col-12 col-lg-5">
+                <label for="exampleFormControlInput2" class="form-label">نام شرکت</label>
+                <input type="text" class="form-control" id="exampleFormControlInput2" >
+              </div>
+              <div class="mb-3 col-12 col-lg-5">
+                <label for="exampleFormControlInput3" class="form-label">ایمیل</label>
+                <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
+              </div>
+              <div class="mb-3 col-12 col-lg-5">
+                <label for="exampleFormControlInput4" class="form-label">تلفن تماس</label>
+                <input  class="form-control" id="exampleFormControlInput4" placeholder="09120000000">
+              </div>
+              <div class="mb-3  col-12 col-lg-7">
+                <label for="exampleFormControlTextarea1" class="form-label">متن پیام</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class=" col-12 col-lg-5 d-flex align-items-center justify-content-center">
+                <button type="submit" class="  border-0 p-1 text-white rounded" style="background-color: #DE2910;min-width: 168px;" >
+                    ارسال
+                </button>
+              </div>
+
+            </form>
+        <div class="col-12 col-lg-4 d-flex justify-content-center">
+            <img style="max-width: 100%;" src="assets/img/contact-us.png"/>
+    
+
+        </div>
+    </div>
+    </div>
+
+  </section>
+  <!-- ======= Form End======= -->
+
+
+  <!-- ======= Cooperation Start======= -->
+  <section id="">
+    <div class="container my-5" >
+        <h6 class="mb-3">همکاری با ما</h6>
+    <div class="d-flex p-4  mx-2 flex-wrap align-items-center " style="box-shadow: 4px 4px 18px 0px #00000040; ">
+        <div class="col-12 col-lg-7 ">
+            شرکت خاوران صنعت پاسارگاد به منظور توسعه اهداف خود در جهت توزیع و تامین کالا و ماشین ابزار در سطوح مختلف از همفکری و همکاری دو جانبه تمامی هموطنان و علاقمندان در این حوزه دعوت به عمل می نماید. 
+        </div>
+        <div class="col-12 col-lg-4 mt-5 ">
+            <div>
+                شماره تماس جهت همکاری با شما
+            </div>
+            <div class="d-flex p-2 justify-content-between " style="border: 1px solid red;">
+                <div style="margin-left: 8px;">
+                    021-33584416 (داخلی 101)
+                </div>
+                <iconify-icon icon="bi:telephone" width="1.2em" height="1.2em"  style="color: black"></iconify-icon>
+            </div>
+        </div>
+    </div>
+    </div>
+
+  <!-- ======= Cooperation End======= -->
 
 
   <!-- Footer Start -->
@@ -697,89 +836,6 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
 
-
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const popover = new bootstrap.Popover('.popover-dismiss', {
-      trigger: 'focus'
-    })
-  </script>
-
-  <script>
-    var mediaQuery = window.matchMedia("(max-width: 767px)").matches;
-    console.log(mediaQuery, 'mediaQuery');
-    var swiper = new Swiper(".mySwiper", {
-      freeMode: true,
-      spaceBetween: 30,
-      loop: true,
-      breakpoints: {
-        1800: {
-          slidesPerView: 5,
-        },
-        1220: {
-          slidesPerView: 4,
-        },
-        768: {
-          slidesPerView: 3,
-
-        },
-        100: {
-          slidesPerView: 1,
-
-        }
-
-      },
-      pagination: {
-        el: ".custom-swiper-pagination",
-        clickable: true,
-        dynamicBullets: false,
-        renderBullet: function (index, className) {
-          return '<span class=" ' + className + ' bullet" style="height:4px;border-radius:0 ">' + '' + "</span>";
-        },
-      },
-      autoplay: {
-        delay: 3000
-      },
-      // Navigation arrows
-      navigation: {
-        nextEl: '.custom-swiper-button-next',
-        prevEl: '.custom-swiper-button-prev',
-      },
-    });
-  </script>
-  <script>
-    var swiper = new Swiper(".logoSwiper", {
-      slidesPerView: 2,
-      loop: true,
-      spaceBetween: 30,
-      freeMode: true,
-      breakpoints: {
-        1800: {
-          slidesPerView: 5,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-
-        },
-        100: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        }
-      },
-      autoplay: {
-        delay: 3000
-      },
-      // Navigation arrows
-      navigation: {
-        nextEl: '.logo-swiper-button-next',
-        prevEl: '.logo-swiper-button-prev',
-      },
-    });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.8/countUp.min.js"></script>
 </body>
 
 </html>

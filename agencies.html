@@ -1,0 +1,1064 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ksp</title>
+  <!--Normalize CSS-->
+  <link rel="stylesheet" href="/assets/styles/normalize.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Animate Css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Custom CSS -->
+  <link href="assets/styles/main.css" rel="stylesheet">
+  <link href="assets/styles/general.css" rel="stylesheet">
+  <link href="assets/styles/swipers.css" rel="stylesheet">
+  <link href="assets/styles/agencies.css" rel="stylesheet">
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+  <script src="assets/js/script.js" type="module"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+  <!-- ======= Top Bar start======= -->
+  <section id="">
+    <div>
+      <nav class="navbar bg-body-tertiary py-1" style="box-shadow: 0px 4px 4px 0px #00000040;">
+        <div class="container-fluid">
+          <div class="d-lg-flex d-none py-1">
+            <a class="top__bar__item text-nowrap animate__zoomInLeft">شبکه فروش</a>
+            <a class="top__bar__item text-nowrap" href="">فروش قطعات یدکی</a>
+            <a class="top__bar__item">خدمات</a>
+            <a class="top__bar__item" href="news.html">اخبار</a>
+            <a class="top__bar__item text-nowrap" style="border: none">همکاری با ما</a>
+          </div>
+          <div class="d-flex d-lg-none align-items-center">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="width: 28px; height: 38px">
+              <img src="assets/img/kspLogo.png" width="100%" height="100%" />
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex" style="color: blue; justify-content: flex-end">
+            <div class="d-flex align-items-center gap-3">
+              <a class="d-flex align-items-center">
+                <iconify-icon icon="bi:search" style="color: #393c41"></iconify-icon>
+              </a>
+              <a class="d-flex align-items-center">
+                <iconify-icon icon="bi:camera-video" style="color: #393c41"></iconify-icon>
+              </a>
+              <a class="d-flex align-items-center">
+                <iconify-icon icon="bi:telephone" style="color: #393c41"></iconify-icon>
+              </a>
+            </div>
+          </div>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <div style="width: 28px; height: 38px">
+                <img src="assets/img/kspLogo.png" width="100%" height="100%" />
+              </div>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    محصولات
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex align-items-center gap-3">
+                          <img width="80px" src="assets/img/image 3.png" />
+                          <div>فرز CNC</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex align-items-center gap-3">
+                          <img width="80px" src="assets/img/image 2.png" />
+                          <div>فرز اونیورسال</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex align-items-center gap-3">
+                          <img width="80px" src="assets/img/image 5.png" />
+                          <div>تراش اونیورسال</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex align-items-center gap-3">
+                          <img width="80px" src="assets/img/image 6.png" />
+                          <div>فرز CNC</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="d-flex justify-content-end mb-2">
+                      <a class="dropdown-item" href="#" style="
+                                border: 1px solid red;
+                                width: fit-content;
+                                border-radius: 4px;
+                              ">نمایش همه محصولات</a>
+                    </li>
+                    <hr class="dropdown-divider" />
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    مطالب سایت
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">درباره ما</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">تصاویر 360 درجه</a>
+                </li>
+                <div class="d-flex flex-wrap gap-4 mt-5">
+                  <a class="dropdown-item py-1 px-2" href="#" style="
+                            border: 1px solid red;
+                            width: fit-content;
+                            border-radius: 4px;
+                          ">فروش قطعات یدکی</a>
+                  <a class="dropdown-item py-1 px-2" href="#" style="
+                            border: 1px solid red;
+                            width: fit-content;
+                            border-radius: 4px;
+                          ">نمایندگی ها</a>
+                  <a class="dropdown-item py-1 px-2" href="#" style="
+                            border: 1px solid red;
+                            width: fit-content;
+                            border-radius: 4px;
+                          ">اخبار</a>
+                  <a class="dropdown-item py-1 px-2" href="#" style="
+                            border: 1px solid red;
+                            width: fit-content;
+                            border-radius: 4px;
+                          ">خدمات</a>
+                  <a class="dropdown-item py-1 px-2" href="/products-list.html"
+                    style="border: 1px solid red; width: fit-content;border-radius: 4px;">نمایش همه
+                    محصولات</a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <!-- ======= Top Bar End======= -->
+  <!-- ======= Menu Start======= -->
+  <section id="">
+    <div class="container d-flex justify-content-between align-items-center pt-2">
+      <div class="d-flex gap-2">
+        <a href="#" class="text-black d-none d-md-block">درباره ما</a>
+        <div id="menuPopover" tabindex="0" class="d-flex" data-bs-trigger="focus" data-bs-container="body"
+          data-bs-toggle="popover" data-bs-placement="right" data-bs-content="">
+          <iconify-icon icon="arcticons:earth" style="color: #000; font-size: 24px"></iconify-icon>
+        </div>
+      </div>
+      <div class="d-lg-flex gap-4 d-none">
+        <a class="text-black" href="/">صفحه اصلی</a>
+        <div class="dropdown-center">
+          <a class="dropdown-toggle text-black hoverButton" href="#" role="menubar" data-bs-toggle="dropdown"
+            aria-expanded="false" id="menuhoverButton" data-modal="devices">
+            محصولات
+          </a>
+        </div>
+        <div class="dropdown-center">
+          <a class="dropdown-toggle text-black hoverButton" href="#" role="menubar" data-bs-toggle="dropdown"
+            aria-expanded="false" id="rr" data-modal="contents">
+            مطالب سایت
+          </a>
+        </div>
+        <a href="#" class="text-black">کاتالوگ</a>
+        <a href="#" class="text-black">تصاویر 360 درجه</a>
+      </div>
+      <div class="d-none d-md-block">
+        <img src="assets/img/kspLogo.png" />
+      </div>
+    </div>
+  </section>
+  <!-- ======= Menu End======= -->
+
+ 
+
+    <!-- ====Iran map Start ====== -->
+    <section class="">
+        <div class="container my-5">
+          <div class="d-flex flex-column-reverse flex-lg-row gap-3">
+            <div class="col-lg-7 col-md-7 col-xs-12 col-sm-6">
+                <div class="proMainContent" style="box-shadow: 4px 4px 18px 0px #00000040;">
+                  <h6 class="text-center p-3" ><span>نمایندگی های شرکت خاوران صنعت پاسارگاد</span></h6>
+                  <div class="productContentSection">
+                    <div class="d-flex align-items-center justify-content-center">
+                      <div>
+                          <img src="assets/img/svgs/redlocation.svg"/>
+                      </div>
+                      <div class="ostanTitle">
+                        لطفا یکی از استان ها را انتخاب نمایید.
+                                            </div>
+              
+                  </div>
+                    <div class="mCustomScrollbar ltr productMatn">
+                      <div class="rtl p-4">
+                        <div class="ostanDiv ostan0">
+                          <p>هیچ نمایندگی در این استان وجود ندارد.</p>
+                          <p>شما می توانید نماینده ما در این استان باشید.</p>
+                          <p>جهت کسب اطلاعات بیشتر با واحد فروش تماس حاصل فرمایید.</p>
+                        </div>
+                        <div class="ostanDiv ostan17">
+                        <div>
+                            <div class="d-flex justify-content-between my-3">
+                                <div>
+                                    مدیر عامل : مهندس نوری
+                                </div>
+                                <div>
+                                    شعبه غرب تهران
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-between gap-2">
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/telephone.svg"/>
+                                  </div>
+                                  <div>
+                                    02166394069
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/message.svg"/>
+                                  </div>
+                                  <div>
+                                    sales@ksp-group.ir
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/phone.svg"/>
+                                  </div>
+                                  <div>
+                                    09121976177
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/fax.svg"/>
+                                  </div>
+                                  <div>
+                                    02166394069
+                                  </div>
+                                </div>
+                                <div class="col-12 d-flex gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/company.svg"/>
+                                  </div>
+                                  <div>
+                                    تهران - جاده قدیم کرج - بعد از میدان شیر پاستوریزه - بین فتح 9 و 11 - مجتمع صنعتی پارس حمید - پلاک 4
+                    
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        </div>
+                        <div class="ostanDiv ostan8">
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    مدیر عامل : مهندس نوری
+                                </div>
+                                <div>
+                                    شعبه غرب تهران
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-between gap-2">
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/telephone.svg"/>
+                                  </div>
+                                  <div>
+                                    02166394069
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/message.svg"/>
+                                  </div>
+                                  <div>
+                                    sales@ksp-group.ir
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/phone.svg"/>
+                                  </div>
+                                  <div>
+                                    09121976177
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/fax.svg"/>
+                                  </div>
+                                  <div>
+                                    02166394069
+                                  </div>
+                                </div>
+                                <div class="col-12 d-flex gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/company.svg"/>
+                                  </div>
+                                  <div>
+                                    تهران - جاده قدیم کرج - بعد از میدان شیر پاستوریزه - بین فتح 9 و 11 - مجتمع صنعتی پارس حمید - پلاک 4
+                    
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        </div>
+                        <div class="ostanDiv ostan4">
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    مدیر عامل : مهندس نوری
+                                </div>
+                                <div>
+                                    شعبه غرب تهران
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-between gap-2">
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/telephone.svg"/>
+                                  </div>
+                                  <div>
+                                    02166394069
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/message.svg"/>
+                                  </div>
+                                  <div>
+                                    sales@ksp-group.ir
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/phone.svg"/>
+                                  </div>
+                                  <div>
+                                    09121976177
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/fax.svg"/>
+                                  </div>
+                                  <div>
+                                    02166394069
+                                  </div>
+                                </div>
+                                <div class="col-12 d-flex gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/company.svg"/>
+                                  </div>
+                                  <div>
+                                    تهران - جاده قدیم کرج - بعد از میدان شیر پاستوریزه - بین فتح 9 و 11 - مجتمع صنعتی پارس حمید - پلاک 4
+                    
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        </div>
+                        <div class="ostanDiv ostan8">
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    مدیر عامل : مهندس نوری
+                                </div>
+                                <div>
+                                    شعبه غرب تهران
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-between gap-2">
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/telephone.svg"/>
+                                  </div>
+                                  <div>
+                                    02166394069
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/message.svg"/>
+                                  </div>
+                                  <div>
+                                    sales@ksp-group.ir
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/phone.svg"/>
+                                  </div>
+                                  <div>
+                                    09121976177
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/fax.svg"/>
+                                  </div>
+                                  <div>
+                                    02166394069
+                                  </div>
+                                </div>
+                                <div class="col-12 d-flex gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/company.svg"/>
+                                  </div>
+                                  <div>
+                                    تهران - جاده قدیم کرج - بعد از میدان شیر پاستوریزه - بین فتح 9 و 11 - مجتمع صنعتی پارس حمید - پلاک 4
+                    
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        </div>
+                        <div class="ostanDiv ostan4">
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    مدیر عامل : مهندس نوری
+                                </div>
+                                <div>
+                                    شعبه غرب تهران
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-between gap-2">
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/telephone.svg"/>
+                                  </div>
+                                  <div>
+                                    02166394069
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/message.svg"/>
+                                  </div>
+                                  <div>
+                                    sales@ksp-group.ir
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/phone.svg"/>
+                                  </div>
+                                  <div>
+                                    09121976177
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/fax.svg"/>
+                                  </div>
+                                  <div>
+                                    02166394069
+                                  </div>
+                                </div>
+                                <div class="col-12 d-flex gap-2">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/svgs/company.svg"/>
+                                  </div>
+                                  <div>
+                                    تهران - جاده قدیم کرج - بعد از میدان شیر پاستوریزه - بین فتح 9 و 11 - مجتمع صنعتی پارس حمید - پلاک 4
+                    
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-lg-5 col-md-5 col-sm-6 IranMap">
+              <p class="text-center"  >با کلیک بر روی نقشه آدرس تمامی نمایندگی ها را مشاهده فرمایید</p>
+              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1"
+                data-name="Layer 1" width="466px" height="492px" viewBox="-300 3500 8500 1239.86" style="width:100%;">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #16bbd3;
+                      fill-rule: evenodd;
+                    }
+    
+                    .cls-1:hover {
+                      fill: #e80000;
+                      fill-rule: evenodd;
+                    }
+    
+                    .cls-blue {
+                      fill: #0067db;
+                    }
+                  </style>
+                </defs>
+                <metadata id="CorelCorpID_0Corel-Layer"></metadata><a class="mapostan" href="javascript:void()"
+                  data-ostanid="16" data-title="سیستان و بلوچستان">
+                  <path class="cls-1"
+                    d="M6420 4106c2,23 12,18 28,28 4,32 3,42 -18,62 -5,5 -3,3 -8,8 -4,3 -4,4 -8,8 -13,13 -26,11 -46,10 -33,0 -27,0 -47,12 -2,46 6,97 -37,123l-56 35c-6,4 -7,4 -16,8 -1,1 -2,1 -2,2l-8 5c0,0 -1,1 -2,2 -1,0 -1,1 -2,1 -12,10 -3,1 -11,12l-16 21c-17,16 2,32 -15,52 -9,10 -9,18 -12,32 -2,11 -7,20 -4,36l31 62c5,12 5,28 5,42 0,20 0,40 0,60 0,22 -2,49 4,70l16 30c17,27 -3,72 26,130 14,28 3,65 13,95l20 22c1,0 2,1 3,1l21 19c17,17 21,43 1,63 -13,14 -30,23 -13,53 9,17 0,-7 8,12 3,9 1,10 6,18 41,70 -1,73 26,113 9,14 15,34 15,51 -2,58 -66,15 -144,41 0,0 -8,3 -8,3 -1,1 -2,2 -3,2 0,0 -1,1 -2,2l-37 31c-4,16 9,25 16,33l8 8c14,17 16,25 14,55 -1,18 -7,35 -24,44l-9 4c-44,13 -33,18 -47,76 -15,66 -2,41 3,87 2,16 2,18 5,30 3,14 1,20 2,34 1,9 0,8 3,17l8 14c-3,23 1,4 -7,15 -11,15 -5,-3 -10,14 -11,31 -3,203 18,227 15,17 27,7 29,43 -1,0 -2,1 -2,2 0,1 -2,2 -2,2l-8 8c-7,6 -1,-1 -6,6 -14,18 -12,32 4,47 1,0 2,1 2,2 14,11 28,6 48,9 16,24 8,42 21,69 12,24 23,41 19,70l-44 2 -7 10c-40,69 26,45 48,86 7,14 6,43 4,61 -3,24 -17,25 -19,51 0,18 1,30 -2,48 -17,6 -10,-1 -15,10 -9,19 8,27 20,36l43 21c1,1 2,1 2,2 1,0 2,1 3,2l33 28c1,1 2,1 3,1 41,13 51,-6 74,40l26 71c0,2 0,3 1,4l3 7c0,2 1,3 2,4 12,-1 18,0 30,-4 35,-14 48,-11 85,-7 29,3 29,9 59,9l136 2c25,0 38,-1 58,-12 33,-20 82,-2 125,-10 18,-10 13,-46 41,-26l33 30c5,3 8,6 12,8 12,8 42,8 58,11 41,8 31,9 79,8 29,0 49,-6 67,17 128,10 104,26 170,-14 29,-18 22,-40 35,-65 21,-41 15,-39 7,-82 -3,-22 1,-58 -7,-76 -4,-7 -1,5 -6,-11 -12,-42 12,-46 53,-67 6,-3 13,-5 19,-8 0,-23 -7,-37 -12,-53 -2,-10 -2,-20 -3,-30 -6,-34 -17,-45 -5,-90 15,-54 -11,-46 31,-71l38 -25c17,-7 13,-16 34,-21 15,-3 33,1 49,-1l11 -38c4,-25 -2,-49 21,-64 5,-4 1,-1 8,-4l8 -4c1,-1 2,-1 3,-2l35 -20c8,-6 27,-13 37,-19l37 -19c5,-1 17,-5 20,-6 4,-2 6,-3 9,-4 18,-8 41,-10 57,-15 17,-4 89,-27 99,-36 47,-38 23,-85 29,-167 9,-123 -25,-87 -61,-81 -14,3 -44,4 -59,4 -34,1 -45,-7 -70,-15l-31 -10c-4,-53 6,-159 -6,-206l-11 -20c0,-1 -2,-4 -3,-5 -1,-2 -3,-4 -5,-7l-31 -40c0,-1 -1,-2 -1,-3 -10,-17 -7,-43 -12,-61 -11,-39 -8,-68 -11,-107 -43,-11 -106,18 -128,-27l-7 -13c-21,-29 -58,-18 -90,-23 -21,-3 -3,-2 -21,-6l-94 -12c-38,-2 -44,-14 -66,-39l-52 -55c-14,-12 -15,-8 -27,-24l-67 -68c-4,-4 1,0 -6,-7 -42,-43 -78,-69 -98,-128l-18 -34c-9,-14 -8,-27 -15,-41 -2,-5 -8,-9 -12,-12l-13 -8c0,0 -3,-3 -4,-3l-17 -10c-19,-9 -45,-20 -56,-36l-15 -25c-2,-1 -3,-3 -6,-5l-48 -49c-12,-20 -1,-53 4,-71 9,-33 2,-51 27,-81 1,-1 2,-2 2,-2 1,-1 2,-2 3,-2 0,-1 1,-2 2,-2l31 -48c0,0 1,-1 1,-2l26 -35c4,-6 6,-10 10,-18l25 -53c5,-13 4,-18 12,-29 1,-2 3,-4 4,-7l37 -64c0,0 1,-1 1,-2l60 -100c38,-87 23,-42 15,-159 -1,-16 -4,-28 -8,-43 -6,-21 -23,-39 -33,-58l-14 -26c0,0 -1,-1 -2,-1 -19,-15 -96,-5 -125,-5 -70,0 -145,-1 -207,8 -6,1 -4,0 -9,2l-4 3c-4,5 -17,37 -31,52l-30 31c-10,10 -18,11 -34,12 -14,0 -23,1 -35,10l-40 28c-11,9 -48,32 -55,47z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="21" data-title="کرمان">
+                  <path class="cls-1"
+                    d="M4925 3923c-2,19 5,25 7,40 4,19 2,42 -10,54l-20 20c-11,12 -45,31 -61,43 0,1 -3,3 -4,3l-30 19c0,0 -1,1 -2,1l-22 14c-34,21 -33,19 -58,0 -6,-4 5,-6 -17,-3 -10,63 12,48 -43,124 -1,0 -1,1 -2,2 0,1 -1,1 -2,2 0,1 -1,2 -2,2 -11,13 -23,21 -39,26 -40,11 -73,34 -110,52 -24,12 -26,23 -49,34l-45 27c-30,19 -35,20 -78,19 -10,12 -20,25 -33,33 -13,9 -27,6 -41,0 -1,0 -1,-1 -2,-1l-33 -11c-15,-7 -15,-10 -38,-7 -6,10 -2,5 -9,11l-36 24c-18,13 -10,25 1,38 12,16 9,46 10,67 2,41 6,25 11,47 3,16 2,45 -1,60 -3,10 -21,23 -31,33l-7 9c0,1 -2,4 -3,4 -14,18 -43,27 -37,52l22 19c1,0 2,1 2,1 22,14 29,15 47,33l18 14c0,1 1,2 2,2 25,28 -17,81 2,101l16 20c10,16 8,22 7,43 -2,28 3,63 4,95 39,29 79,0 105,20 1,1 2,2 2,2 14,14 16,35 35,53l38 42c1,1 1,2 2,2 15,10 19,2 39,5 5,8 4,6 10,14l35 36c9,9 12,18 19,30 20,34 39,64 36,111 -1,36 -14,31 -8,91 22,-3 29,-15 50,-2 0,0 1,1 2,2 44,27 54,-5 89,-17 6,-3 13,-4 18,-6 9,-5 2,-4 17,-11 31,-14 30,-18 67,-37l31 -21c8,-5 5,-6 16,-8 61,-13 41,80 41,144 1,42 -6,100 17,137 21,32 39,29 71,44 57,27 105,10 134,8 15,-1 24,0 39,-3 24,-39 13,-20 26,-53 0,-1 0,-2 1,-3l3 -5c16,-26 30,-21 56,-11l10 3c5,1 14,1 20,1 36,-3 34,-8 56,13 -1,23 -8,37 -8,60 0,15 5,44 11,54 16,2 24,-1 37,0 19,3 12,8 20,16 14,13 49,4 65,0 47,-13 59,26 69,59 3,13 2,24 -9,33l-65 54c-9,16 -3,28 5,41l26 41c15,29 4,52 30,73 17,12 36,8 57,10 9,11 4,5 14,14 14,12 24,22 31,38 9,25 45,26 62,41 50,46 27,34 100,36 38,1 65,37 84,51 23,17 33,2 59,6 25,3 8,5 25,9 8,2 22,1 31,2 22,2 20,5 36,15 13,7 12,16 24,23 11,6 19,7 30,19 0,0 1,1 1,2l9 8c5,7 6,13 11,22 18,3 53,-20 70,0 0,0 1,1 2,2l16 18c16,-5 10,-14 21,-25 11,-9 29,-4 45,-6 1,-18 -1,-11 -7,-22 -9,-14 -12,-28 -21,-39 -2,-2 -5,-5 -6,-6 -7,-13 -3,-17 -7,-29 -39,-16 -29,-11 -54,-42 -35,-43 22,-53 3,-81l-7 -10c-42,-49 -29,-41 -29,-160 0,-20 -6,-73 0,-90 8,-20 5,2 13,-18 2,-14 -10,-22 -11,-55 -4,-61 -12,-71 -13,-88 -1,-18 10,-48 12,-96 30,-18 22,-40 68,-46 5,-19 8,-15 10,-33 2,-29 -16,-36 -27,-50 -1,-2 -2,-5 -4,-8 -27,-43 -18,-32 20,-63l5 -4c51,-47 91,-20 159,-32 4,-28 -2,-47 -21,-62 -2,-114 5,-52 -24,-114 -3,-7 -6,-13 -9,-18l-6 -10c-9,-22 2,-39 12,-54 20,-29 48,-26 -7,-62 -15,-10 -17,-22 -32,-31 -1,-12 0,-26 -1,-37l-8 -63c-9,-34 -21,-7 -20,-89 2,-81 -27,-9 -28,-115 -1,-32 5,-72 -3,-104 -1,-3 -1,1 -4,-12 -1,-7 -1,-12 -2,-19 -3,-26 -12,-31 -28,-44 -1,-25 -4,-51 7,-72 30,-60 22,-30 -16,-67l-17 -19c-1,-1 -2,-1 -2,-2 -16,-15 -33,-23 -47,-41 -14,-17 -29,-27 -41,-46 -3,-4 -2,-3 -5,-7l-4 -4c-8,-9 -15,-10 -24,-16 -1,-1 -2,-2 -2,-2 -1,-1 -2,-1 -2,-2 -2,-2 -7,-5 -9,-7 -11,-7 -8,-3 -14,-14 -8,-15 -6,-31 -8,-51 -14,-1 -31,0 -42,-6l-40 -20c-18,-10 -39,-16 -56,-28 -23,-16 -42,-23 -63,-43 0,-1 -6,-6 -7,-6l-28 -19c-3,-3 -3,-4 -6,-7l-4 -4c-16,-15 -29,-16 -46,-29 -8,-5 -3,-3 -13,-10l-62 -42c-1,0 -2,-1 -2,-1 -7,-3 -4,-2 -10,-4l-44 -15c-24,-7 -42,0 -68,-28 -2,-2 -4,-5 -6,-8 -22,-1 -54,4 -72,1 -50,-10 -10,-24 -131,-23 -64,1 -34,-1 -60,-14 -29,-14 -67,14 -94,-15 -11,-12 -5,-10 -29,-10 -31,0 -42,0 -68,8 -13,5 -35,5 -46,10 -4,3 -8,5 -12,6z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="31" data-title="یزد">
+                  <path class="cls-1"
+                    d="M4845 2444l-2 66 -36 32c-9,10 -2,6 -15,16 -8,7 -14,10 -20,16l-11 8c-1,1 -2,1 -2,2 -9,4 5,-3 -6,2 -1,1 -2,1 -3,2 -1,0 -2,0 -3,1 -57,26 -31,37 -103,35 -30,-1 -18,-1 -27,-6 -1,0 0,-2 -8,-4l-6 21c-12,32 -9,61 -36,116l-9 15c0,1 -1,2 -1,3 -2,4 -3,6 -5,11 -16,33 -3,81 -74,84 -41,2 -88,-5 -128,0 -4,51 10,18 16,52 6,33 -7,67 -2,100 5,28 5,0 9,28 4,24 0,48 1,72 0,32 28,41 27,75 -2,25 -5,4 -18,47l-13 32c-9,18 -13,15 -22,29 -5,7 -1,-2 -5,8 -58,0 -40,-7 -73,38l-13 15c-12,13 -17,16 -24,32 -16,36 -40,8 -69,17 -1,0 -2,1 -3,1l-13 12c-8,10 3,-2 -5,7 -17,17 -90,19 -116,32 -12,6 1,10 -30,11 -7,0 -17,-1 -21,-1 -21,1 -11,-4 -15,7 -18,6 4,0 -20,46 -8,15 -17,22 -30,31l-51 33c-14,7 -6,1 -14,9l-36 32c-11,9 -14,17 -19,30 -6,16 -23,28 -41,30 -49,6 -116,-17 -146,-6 -16,6 -4,3 -15,12 -4,3 1,0 -7,4l-61 35c-14,9 -54,17 -57,35 -4,19 1,9 2,12 4,7 5,7 14,11 2,50 -4,118 1,163 3,34 4,3 10,28 14,54 -36,92 7,149 0,0 1,1 1,2l47 49c14,16 16,27 13,55 -16,12 -65,41 -88,42 -13,1 -29,-3 -40,5 7,11 46,16 58,58 8,27 -13,49 -30,66 -21,21 -6,20 0,28l19 29c2,3 2,4 3,8l6 11c21,-2 33,-3 50,9l15 17c1,1 2,2 2,2 33,38 93,17 129,50 15,14 11,31 18,49 38,4 97,-6 131,4 78,24 37,25 79,59 2,33 0,73 8,102 12,43 -11,39 -28,63 -12,17 4,42 15,53 1,0 2,1 2,1l20 21c13,18 9,16 37,18 11,1 14,0 23,5 33,19 13,61 20,92 5,21 23,41 35,61 12,22 33,32 57,18 64,-37 69,-13 84,-35 14,-23 -7,-55 -6,-88 0,-19 1,-37 -14,-49 -4,-3 -9,-4 -14,-7 -7,-77 31,-80 -18,-111l-10 -7c-14,-11 -60,-40 -63,-57 -3,-19 12,-23 21,-35l3 -5c38,-51 80,-43 57,-128 -5,-18 -2,-32 -4,-49 -2,-15 -7,-46 -18,-60 -10,-12 -22,-7 0,-32l39 -40c23,-18 53,-15 81,-5 17,5 51,27 64,2l12 -15c15,-13 44,-2 62,-14l97 -58c23,-16 10,-11 46,-29l5 -3c20,-10 13,-11 28,-20 22,-12 57,-10 68,-16 8,-4 9,-11 16,-20l31 -40c26,-26 8,-61 24,-87l17 -15c16,-8 24,9 32,23 8,-1 15,0 22,-6l83 -59c4,-4 3,-3 7,-6l37 -29c1,-1 2,-2 2,-2l18 -22c9,-27 -10,-31 -9,-58 0,-26 11,-34 37,-39 179,-31 123,9 173,11 15,1 43,-2 56,1 17,3 15,11 44,11 31,0 66,-6 97,3l6 2c1,1 4,2 5,2 10,4 14,6 20,9 3,1 6,3 10,5l8 4c15,9 32,4 49,2 10,-1 18,-2 27,1 11,3 23,23 42,-9 9,-15 9,-32 17,-47 16,-29 19,-64 25,-75 21,-39 -16,-35 26,-86l15 -22c-28,-2 -55,-3 -66,-34 -5,-13 -3,-31 -3,-46 1,-30 3,-22 -14,-35 -2,-15 0,-33 -5,-44 -10,-20 -22,-33 -29,-55 -26,0 -36,-8 -60,-15l-55 -49c-1,-1 -1,-2 -2,-2 0,-1 -1,-2 -2,-2 -11,-15 -14,-35 -22,-54 -17,-39 -25,-41 -23,-93 1,-21 6,-42 -8,-59l-19 -25c-5,-8 -11,-14 -11,-28 1,-22 65,-79 -28,-74 -11,19 -5,15 -23,39l-27 25c-1,1 -1,1 -2,2l-4 3c-8,5 -39,13 -50,11l-67 -36 -8 -21c-4,-28 1,-51 -16,-71l-45 -58c-22,-25 -31,-60 -20,-85l22 -34c32,-37 9,-93 24,-132l22 -45c2,-7 2,-54 23,-85 9,-13 2,3 7,-12 27,-5 42,0 68,0 1,-1 2,-3 2,-2l65 -95c6,-11 -3,-28 -12,-38 -11,-13 -52,-33 -69,-38l-5 -25c-51,-4 -48,5 -92,-14l-14 16c-14,12 -15,2 -21,0 -11,-3 -21,-5 -31,6 -7,7 -2,3 -7,10l-31 29c-14,10 -31,8 -54,9z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="11" data-title="خراسان رضوی">
+                  <path class="cls-1"
+                    d="M5365 1112l-15 34c-8,12 -9,14 -7,27 7,3 10,2 17,4 14,4 12,4 20,13l20 28c6,13 13,26 7,40l-22 30c-13,20 -24,67 -4,85 7,7 15,4 26,8 39,12 48,33 44,74 -3,37 -26,53 -49,77 -2,2 -5,6 -6,7l-11 17c-9,27 8,64 7,83 -1,17 -9,11 -11,40 -1,16 -3,25 -12,41 -12,1 -26,3 -37,-1l-161 -69c-1,0 -2,-1 -3,-1l-19 -13c-37,-28 -36,-4 -61,-7 -15,-2 -22,-12 -45,-12 -31,-1 -21,5 -45,-9l-23 -9c0,-1 -1,-1 -2,-2 -24,-14 -59,0 -80,-12l-7 -5c-26,-15 -36,-3 -66,-2 -14,0 -43,-3 -56,0 -13,4 -16,12 -23,22 0,0 -1,1 -1,2 -13,17 -26,19 -22,45 10,6 14,4 23,8 14,6 23,20 24,35 2,14 0,32 -7,43 -10,16 -22,20 -36,30 -40,29 -27,15 1,40l4 4c1,1 1,2 2,2l35 41c-1,1 -4,3 -4,3 -29,26 -7,25 -18,62 -9,29 -5,18 3,43 14,46 -15,52 26,103 8,11 15,24 27,30l93 45c1,11 3,16 0,27 -11,44 -29,30 -1,95 2,5 7,20 9,24 13,49 -44,50 -63,65 -1,1 -2,2 -2,2l-13 7c-10,6 -16,12 -22,27l-5 11c-18,51 -43,25 -62,34l-39 44c-22,31 -22,21 -40,51l-3 5c0,1 -1,1 -2,2l-21 42c0,1 -1,2 -1,3l-4 17c23,5 60,10 81,1 21,-8 10,-13 55,-30 10,-3 13,-9 20,-18l17 -16c10,-8 8,-1 16,-16 9,-19 2,-45 3,-66l13 -9c0,-1 17,-10 17,-10 12,-6 35,-3 43,-6 1,0 2,-1 3,-1 10,-5 9,-9 14,-14l14 -13c4,-4 0,-1 6,-6l19 -22c19,-2 29,2 45,-6 6,-2 -2,-6 19,-6 15,-1 15,3 19,5 34,14 57,2 91,5l2 31c34,7 97,54 87,91 -3,13 -4,6 -12,16 -1,1 -1,2 -2,2l-24 36c-44,65 -14,20 -31,65 -27,9 -54,-1 -82,2 -20,28 -10,76 -22,97 -25,45 -21,35 -22,89 -1,39 -15,62 -33,93 -10,18 -10,41 0,59 17,30 35,52 56,80 0,1 1,2 1,2 1,1 2,2 2,3 20,28 1,60 18,85 13,18 69,34 103,12 7,-5 3,-3 7,-5l8 -8c14,-13 9,-22 18,-38l7 -9c23,-26 20,2 52,-3l23 -41c5,-8 7,-16 16,-21 23,-15 30,15 43,26 13,12 40,7 57,6 4,-5 10,-21 12,-26 5,-13 7,-20 11,-32 22,-54 -2,-61 -1,-72l3 -5c21,-38 70,-84 101,-115l21 -19c1,-1 1,-1 2,-2 28,-18 42,2 62,17 4,3 0,1 8,5 51,30 99,19 159,18 21,0 33,-4 51,-7 6,-1 14,-1 20,-2l8 -15c28,-1 57,-1 84,-1 36,0 34,-18 59,-8 1,0 -1,1 9,4 2,-2 7,-5 9,-7 1,0 4,-2 5,-3 1,0 2,-1 3,-2 51,-30 40,30 89,-10 16,-13 38,0 66,-18 31,-19 24,-3 47,3 22,5 78,4 95,-4 1,-24 -20,-35 -26,-58 0,-1 -3,-5 0,-15 5,-15 26,-34 39,-46 54,-48 16,-58 94,-61 0,-24 -10,-46 -26,-59 -1,-1 -2,-2 -3,-2 -9,-7 8,5 -7,-4 -12,-8 -18,-16 -15,-33 4,-21 11,-15 39,-36l15 -13c13,-11 18,-14 22,-34 15,-81 23,-91 25,-196 1,-58 -18,-42 -19,-72 -1,-22 11,-49 16,-72 4,-19 4,-33 11,-49 3,-7 4,-11 6,-20 8,-51 -17,-98 -25,-149 -3,-20 -1,-17 -13,-30l-5 -6c0,-1 -1,-2 -2,-3l-17 -26c-29,-31 19,-75 -16,-128 -12,-17 -23,-42 -25,-66 -1,-25 0,-53 0,-79 -12,-6 -5,-3 -12,-14l-6 -9c-16,-20 -18,-13 -67,-1 -61,15 -110,32 -182,32 -17,0 -31,-5 -42,-9 -22,-8 -20,-12 -36,-20 -36,-18 -4,0 -26,-27 -7,-9 -15,-13 -24,-28l-6 -10c-6,-11 -14,-11 -25,-29 -4,-6 -10,-13 -15,-18 -19,-22 -41,-26 -74,-31 -8,-1 -48,-11 -57,-14l-54 -16c-58,-14 -53,-19 -82,-62 0,-1 -1,-2 -2,-3 0,0 -1,-1 -1,-2l-39 -72c-4,-7 -2,-6 -6,-12 -25,-2 -48,-3 -72,-4 -3,0 -12,0 -15,-1l-7 -3c-53,-28 -106,-20 -165,-11z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="17" data-title="فارس">
+                  <path class="cls-1"
+                    d="M3087 4735l-8 14c-8,9 -7,3 -16,10 -6,38 23,60 -13,84 -1,1 -4,3 -5,3 -7,5 0,2 -7,5 -23,13 -35,-2 -38,-3l-5 -4c-6,-3 -3,-1 -9,-3 -29,-10 -29,-4 -60,-8l-10 -13c-15,-13 -21,-1 -28,1 -10,3 -9,5 -19,0l-23 -22c-12,-19 -1,-25 8,-32l-5 -3c0,-1 -1,-2 -2,-2 -13,-11 -10,-17 -32,-21 -30,-4 -34,7 -38,32l10 10c22,22 16,24 31,41 9,10 17,12 23,25 8,19 -12,75 -14,78 -10,19 -19,12 -34,25 -21,19 -44,16 -70,13 -31,33 -1,54 -23,78l-31 21c-14,4 -44,11 -59,13 -2,32 5,0 11,29 5,27 -7,12 -7,33 39,9 67,-4 95,0 30,3 24,-19 56,-4 11,5 18,16 28,23 13,9 24,4 36,0 16,-5 28,0 40,13 40,44 -44,73 24,96 29,10 59,3 72,13 12,10 4,3 11,14l9 11c34,47 35,63 42,73l13 15c1,1 2,1 2,2l8 8c1,0 2,1 2,2 1,0 2,1 2,1 1,1 2,2 3,2l25 27c6,6 1,0 8,8l15 16c8,15 3,18 15,33l22 26c10,13 7,29 8,45 3,1 8,1 11,3 8,3 6,2 11,6 18,15 25,62 26,65 5,16 4,1 9,18 1,4 2,11 2,15 2,17 -1,17 7,30 8,14 6,5 8,26l31 105c16,42 16,71 57,98 13,8 -7,0 12,9 30,8 44,-9 61,33l5 12c5,13 1,8 8,20 17,28 37,54 48,86l6 30c4,12 16,24 28,28 17,4 29,1 38,18 11,19 22,21 42,30l28 27c14,14 34,44 51,48 32,8 64,6 78,10 11,2 12,5 18,11 23,24 28,6 58,24l18 15c1,0 1,1 2,2l8 14c13,2 16,4 25,-6 8,-8 4,-10 11,-20l24 1c9,18 -7,15 60,27 31,5 69,11 91,-17 1,0 2,-1 2,-2l13 -24c6,-18 14,-33 3,-51 -9,-13 -18,-32 -4,-49 0,-1 1,-2 1,-2 1,-1 2,-2 2,-2 15,-17 44,-19 63,-25l107 -38c29,-5 213,1 279,-1 12,-22 39,-26 54,-46l15 -16c1,-1 2,-1 3,-2 1,-1 7,-5 9,-7 0,-1 1,-2 2,-2l31 -33c0,0 1,-1 2,-2l17 -18c13,-17 15,-44 34,-55 15,-9 26,-18 17,-36l-23 -25c-15,-15 -1,-3 -19,-12 -64,-29 -33,-38 -36,-65 -2,-16 0,-5 -6,-13 -25,-34 -19,-49 -19,-111 0,-13 1,-43 3,-54 9,-37 29,-43 -8,-73l-27 -18c-61,-51 -47,2 -47,-145 1,-33 -1,-78 -21,-101l-8 -12c-55,-73 -38,-24 -89,-66l-33 -38c-1,-2 -5,-7 -5,-7l-45 -54c-24,-1 -51,7 -72,-5 -27,-14 21,8 -7,-4 -20,-9 -66,-4 -88,0 -9,24 -58,48 -88,8l-6 -9c-1,-1 -2,-2 -2,-3l-30 -38c-33,-52 -14,-64 -26,-112 -38,-1 -33,-4 -56,-25l-30 -29c-13,-17 -36,-47 -27,-72 11,-27 30,-19 27,-58 -3,-30 -3,-50 -3,-80 0,-4 0,-15 -1,-19l-5 -10c-7,-10 -15,-14 -27,-20l-5 -2c-40,-19 -127,1 -151,-9 -7,-6 -11,-11 -16,-19 -9,-14 -7,-12 -9,-32 -12,-9 14,8 -8,-4 -38,-22 -38,-5 -78,-20l-64 -52c-61,-3 -50,11 -65,-31l-12 -23c-1,-1 -1,-2 -2,-2 -8,-12 -19,-17 -23,-32 -2,-7 -2,-15 -2,-22 -34,-3 -72,-1 -107,-1 -23,0 -59,6 -79,-5l-45 -34c-1,-1 -2,-2 -2,-2 -12,-9 -19,-18 -33,-11 -10,6 -17,21 -24,31l-13 16c-12,13 -32,31 -31,48 0,8 -1,3 2,10l7 10c14,17 25,32 20,64 -4,26 -22,29 -26,53 -1,7 0,19 0,27 0,14 0,42 -3,55 -2,11 -3,10 -6,21 -7,19 -11,12 -13,28 -1,14 4,14 17,23z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="4" data-title="اصفهان">
+                  <path class="cls-1"
+                    d="M3698 2928c-16,1 -35,-3 -49,3 -17,9 -17,14 -38,14l-156 -1c-18,4 -15,9 -36,16 -32,10 -58,10 -99,7 -3,-3 -4,-3 -8,-7 -1,-1 -3,-3 -4,-4 0,-1 -1,-2 -1,-2 -1,-1 -2,-2 -2,-3l-13 -22 -39 -10c0,0 -1,-1 -2,-2l-3 -4c-1,0 -2,-1 -2,-2 -1,0 -5,-6 -6,-6 -61,-2 -76,-31 -107,-8 -13,10 -22,4 -38,9 -1,1 -2,1 -3,1 -1,1 -2,2 -2,2l-17 7c-38,5 -27,-16 -71,-16 -47,-1 -67,-27 -104,-25 -23,1 -41,1 -63,1 -19,8 0,1 -10,7l-38 12c-28,3 -12,2 -24,9 -31,18 -60,5 -92,12 -28,6 3,3 -24,11l-27 9c0,12 0,9 2,18 2,7 2,-1 4,15 13,76 -70,74 -25,105 24,17 40,37 30,69 0,1 2,0 3,2 2,6 9,3 11,9 10,20 -9,12 -4,35 2,12 1,4 3,9 2,4 10,7 -10,35 -1,1 -7,9 -9,11 -1,1 -1,1 -2,2l-19 21c-18,15 -48,7 -70,13l-76 28c-1,1 -2,1 -3,2 0,0 -1,1 -2,1l-16 16c-56,3 -36,6 -57,10 -30,7 -33,-8 -50,18 -10,15 -18,22 -36,32 -1,0 -4,2 -5,2l-4 3c-7,3 3,2 -12,4 -11,1 -22,0 -35,2 -1,10 -4,25 -2,36 3,13 11,14 19,20 2,18 3,14 -5,24l-4 4c-11,13 -14,24 -26,38 -13,14 -7,4 -21,13 -1,7 -2,8 0,15 5,20 31,16 17,47 0,1 -1,2 -1,3l-4 4c-25,27 -42,17 -68,10 -12,-4 -4,-4 -12,1 -22,13 -10,51 -3,66l18 34c11,9 9,3 21,10l81 63c1,0 2,1 2,1 1,1 4,3 4,4 12,10 -6,2 12,9 15,1 8,-4 17,-10 10,-7 16,-12 30,-12 6,0 6,0 12,1 27,6 28,21 46,35 2,2 13,11 13,11 16,8 32,4 46,-5 9,-6 14,-10 11,-23 -4,-14 -15,-19 -9,-36 9,-28 38,-1 70,-7 15,-3 27,-5 42,-7 23,-2 60,-19 72,4 8,14 4,24 14,35 11,13 15,30 22,47 6,17 1,-9 8,15 10,34 -19,48 25,65 36,14 37,8 64,47 5,8 3,7 8,15 5,5 24,-4 53,33l6 9c15,21 21,48 33,71 6,10 4,-9 5,15 2,14 -2,14 -7,23l-6 10c-7,11 -21,23 -32,27l0 23c18,7 36,19 19,37 -7,7 -12,6 -19,11 -2,26 10,47 4,65 -1,6 -5,6 -7,22 -1,19 6,24 8,44 1,26 -1,20 18,32 9,53 -23,30 -2,75 12,25 14,49 16,76 19,16 13,15 28,32l37 30c21,6 18,1 36,16 25,19 8,21 45,34l24 10c0,0 1,1 2,2 14,12 19,13 39,8 4,-25 10,-21 11,-60 2,-108 9,-47 20,-96 3,-12 2,-27 -2,-37 -3,-8 -11,-16 -17,-22 -6,-6 -19,-11 -20,-20 4,-23 0,-6 8,-16l49 -63c1,0 2,-1 3,-2l22 -29c13,-19 36,-20 51,-7 9,7 5,6 12,12 34,26 36,31 90,31 205,-1 105,6 155,12 7,1 17,0 25,-1l0 -49c-4,-2 -2,-1 -8,-5l-26 -14c-1,0 -2,-1 -2,-2 -12,-9 -26,-20 -28,-35 -7,-46 67,-13 108,-30l22 -10c9,-8 9,-17 7,-25 -1,-2 -4,-8 -5,-11 -6,-14 -17,-21 -28,-32l-13 -15c-22,-22 -31,-40 -30,-76 1,-23 2,-41 8,-62 5,-20 1,-37 -16,-49 0,-11 -2,-29 -1,-40 3,-34 6,4 11,-31 3,-22 2,-71 -8,-88 -10,-18 -27,-30 -12,-52 5,-8 21,-15 29,-23 6,-6 -4,2 6,-6l68 -39c8,-6 5,-3 13,-7l29 -14c18,-9 34,-12 54,-10 17,2 23,7 33,10 22,6 64,4 87,0 4,-6 3,-7 7,-15l3 -5c0,-1 1,-2 1,-3 1,-1 4,-7 4,-8 13,-23 32,-27 50,-45 9,-10 -3,3 4,-4l43 -33c7,-5 8,-4 16,-9 18,-10 37,-26 39,-34 8,-22 -2,-49 20,-62 29,-16 17,18 52,1 1,0 2,-1 3,-1 62,-31 60,-10 99,-28 7,-3 2,-1 9,-3 27,-8 32,-29 43,-31l56 0c1,-1 2,-4 2,-3 2,5 3,-5 3,-6l70 -85c12,-12 33,-8 52,-9 21,-26 44,-79 34,-111 -6,-20 -20,-30 -21,-54 -2,-37 0,-34 -7,-72 -5,-25 -4,-50 -2,-75 3,-30 1,-43 -10,-70 -14,-33 10,-39 -37,-39 -35,1 -34,15 -71,10 -70,-10 -33,17 -92,14 -77,-3 -61,16 -100,17 -61,1 -57,-16 -95,5 -24,14 -88,5 -116,6 -60,1 -80,-25 -112,4 -12,10 5,2 -11,9z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="15" data-title="سمنان">
+                  <path class="cls-1"
+                    d="M4296 1384c-7,48 10,45 -18,99 -7,15 -9,22 -21,32 0,8 -1,14 1,22 5,15 1,-5 9,14 -7,24 10,-17 -3,6 -15,25 -23,49 -50,65 -38,22 2,14 -46,21 -25,4 -2,1 -18,6 -20,7 -40,3 -61,11 -8,2 -4,1 -9,3 -27,17 -46,41 -69,62 -16,14 -33,37 -50,46 -11,6 -9,4 -24,1 -6,-10 -2,-16 -11,-21 -18,-10 -14,19 -19,30l-6 9c-5,10 -7,15 -12,23 -29,6 -51,-7 -73,3l-12 8c-8,4 -2,3 -15,5 -32,3 -40,-7 -63,17 -10,11 -16,10 -28,20 -11,9 7,-2 -7,5l-42 15c-3,32 17,37 11,67 -4,19 -11,16 -22,28 -1,0 -6,6 -6,6l-33 31c-16,18 -25,36 -52,37 -27,1 -19,-1 -35,10 -22,16 -85,-7 -92,63l-19 14c0,1 -1,1 -2,2 -2,2 -8,6 -10,7 -15,6 -34,2 -50,4l-1 14 52 4c6,45 4,32 -22,59l-97 90c-15,15 -19,21 -44,22 -3,15 -4,11 -11,19l-10 14c-1,0 -1,1 -2,2l-24 27c-22,26 -70,83 -109,43 -23,-24 -3,-9 -39,-37 -6,-5 -2,-3 -9,-6 -5,-2 -7,-2 -13,-3l-12 -4c-24,-7 -13,4 -33,-15l-4 -4c0,-1 -3,-4 -3,-5 -17,-18 3,-12 -20,-11 -25,38 20,54 -1,94 -14,26 -13,26 4,49l15 17c1,0 2,1 2,2l47 56c11,17 11,25 0,44l-25 50c-18,35 3,56 -21,94 -12,19 -22,54 -18,83 1,0 3,0 3,1 3,8 54,22 62,23 61,3 50,32 80,12l9 -6c1,-1 2,-1 3,-2 17,-8 27,0 44,-15l42 -4c30,14 18,12 52,15 16,2 19,11 28,20 13,12 28,6 48,8 7,12 11,31 19,36 22,8 75,5 95,-7 8,-5 4,-4 12,-11 11,-8 2,-5 21,-7 22,-1 37,5 49,7 17,4 107,8 127,-2 4,-2 5,-5 17,-10 24,-11 38,-5 62,-18 7,-3 0,-1 9,-4 17,-6 155,1 178,2 62,2 12,-19 95,-14 16,1 37,1 52,0 7,0 20,-2 25,-4 12,-7 2,-2 11,-14l83 0c19,-9 -10,7 6,-5 18,-13 16,-10 46,-8 9,0 24,1 32,0 30,-3 7,-3 25,-8 11,-4 109,-3 126,-2 30,1 51,15 83,4 11,-4 16,-3 24,-8 24,-14 19,-72 51,-116l5 -7c3,-5 2,-4 5,-11l7 -21c1,-1 1,-2 1,-3 2,-6 1,-7 3,-13 10,-31 7,-60 13,-75l44 -78c4,-6 11,-11 17,-16 21,-17 6,-11 30,-33 12,-11 16,-22 29,-35l14 -19 44 -5c4,-30 16,-49 42,-64l20 -15c13,-9 23,-2 39,-10 5,-17 8,-22 -3,-38 -46,-69 -3,-105 -5,-117 -1,-9 -5,-9 -11,-14 0,-1 -1,-2 -2,-2l-22 -10c-12,-4 -32,-10 -43,-20l-8 -8c0,-1 -6,-6 -6,-6l-17 -15c-35,-33 -32,-68 -32,-116l-17 -16c-1,-14 -3,-16 4,-26 7,-10 9,-3 12,-18 1,-10 -1,-21 1,-31 6,-30 35,-18 -24,-55l-18 -18c-1,0 -1,-1 -2,-2 -7,-16 0,-21 6,-28 12,-16 30,-22 43,-37 9,-10 3,3 7,-12 4,-11 2,-28 1,-40 -3,-2 -25,-12 -27,-13l-13 -18c0,-1 -4,-6 -4,-6 -18,-2 -23,0 -37,5 -21,9 -15,14 -27,20 -11,1 -57,0 -66,-3 -10,-3 -19,-16 -25,-25 -3,-5 -4,-7 -7,-13l-14 -22c-23,-33 -28,-28 -72,-21 -8,16 -4,10 -7,23l-24 2c-1,-2 -3,-4 -3,-5l-23 -36c-14,-30 8,-29 13,-47 4,-14 -4,-86 -14,-92 -12,-7 -12,4 -17,11l-24 0 -4 -69c-16,0 -30,2 -46,11z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="10" data-title="خراسان جنوبی">
+                  <path class="cls-1"
+                    d="M6021 2775c-13,22 -14,21 -43,22 -23,1 -25,12 -64,11 -24,-1 -48,-7 -71,-2 -83,19 -87,27 -196,19l-16 -4c-24,-10 -41,-27 -62,-41 -7,-4 6,-3 -13,-5l-37 32c-17,11 -56,47 -80,88 -6,11 4,36 3,53 -6,66 -13,41 -21,84 -19,4 -16,8 -27,17 -10,9 -22,8 -37,8 -8,0 -11,0 -19,-2 -8,-3 -1,-1 -8,-4 -15,-7 -19,-18 -33,-26 0,1 -2,1 -2,3 -2,9 -32,32 -29,47 5,18 37,9 8,52 -21,31 -14,44 8,71 12,17 15,27 14,53 -2,56 5,71 27,112l21 44c4,8 3,6 7,13l21 23c3,3 7,7 10,9l17 8c9,5 2,6 10,7 11,1 24,-1 35,2 11,4 14,12 18,19l15 21c14,25 24,60 30,85 4,18 0,52 3,73 58,11 88,-14 87,29 -24,16 -6,4 -24,21 -33,33 -28,39 -33,87 -3,29 -23,64 -35,92 -6,14 -3,24 -9,38 -7,16 -15,18 -16,37 60,8 79,15 127,45l33 22c1,0 2,1 2,2l207 138c31,13 18,2 64,26 14,7 -6,0 17,7 51,14 2,49 48,78 6,5 5,3 12,8l22 21c1,1 1,2 2,2l81 83c1,0 1,1 2,2l23 18c11,6 5,6 17,6 10,1 7,0 15,-4l16 -9c9,-7 4,-3 10,-10l65 -47c21,-14 50,-23 53,-50l5 -52c0,-5 0,-8 1,-14 4,-18 7,-16 14,-38 23,-10 59,-2 87,-8 9,-3 35,-33 22,-45l-23 -14c-6,-41 14,-55 50,-86l12 -9c6,-4 7,-4 12,-8 44,-33 36,-35 103,-37 5,-12 0,0 7,-11l21 -36c6,-12 19,-19 24,-31 7,-13 1,-23 -3,-34l-38 -93c-3,-8 -4,-34 -4,-45l-7 -79c0,-17 0,-45 -6,-59 -7,-15 3,8 -4,-7l-14 -42c0,-1 -1,-2 -1,-2 -1,-1 -1,-2 -1,-3l-30 -106c-20,-45 -22,-98 -46,-141 -5,-9 -4,-4 -8,-16l-11 -34c-4,-16 -19,-52 -25,-66l-10 -18c-43,-69 2,-74 20,-131 4,-12 10,-17 13,-29 6,-31 16,-48 16,-79 -25,-2 -60,7 -75,-9 -6,-7 -10,-20 -15,-26 -81,-82 -34,-136 -66,-144 -29,1 -60,4 -88,2 -39,-2 -25,-28 -51,-10l-6 6c-1,1 -1,2 -2,2 -26,21 -46,1 -74,22 -12,8 4,4 -14,7 -10,2 -13,1 -21,-3 -14,-7 -20,-11 -39,-8z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="29" data-title="هرمزگان">
+                  <path class="cls-1"
+                    d="M4542 5519c4,10 6,7 18,14 1,1 4,3 5,3l45 38c1,1 1,2 2,2 14,13 -4,-7 8,8 9,11 6,24 2,32l-3 5c-10,18 -9,3 -13,25 -6,33 -4,126 4,142 1,1 14,18 14,19 13,22 -3,24 -1,45l60 46c48,62 16,54 -3,82 -6,9 -4,11 -9,19 0,1 -1,2 -1,3l-55 64c-1,1 -2,1 -2,2 -19,19 -37,39 -59,53 0,0 -9,7 -9,7 -1,0 -1,1 -2,2l-6 6c-1,1 -3,4 -6,6l-50 25c-16,5 -42,3 -59,1 -32,-3 -20,-13 -76,-13 -23,0 -100,-1 -116,4 -19,6 -1,3 -20,9l-99 35c-1,0 -4,2 -6,3l-46 17c-2,23 -3,10 7,19 7,7 7,-2 12,14 4,15 3,43 -3,55l-29 37c-20,24 -36,39 -73,30l-53 -9c-19,-2 -11,0 -21,-8 -5,-4 2,-5 -15,-9 -31,-7 -41,50 -86,-5l-30 -19c-22,-3 -34,-5 -46,-27 -28,-2 -53,0 -79,-7 -21,-6 -17,-6 -38,-1l-26 6c-9,3 -3,-1 -8,4 2,23 5,12 25,26 27,20 36,20 77,32 45,13 120,24 155,42 7,4 -6,1 10,4 12,2 13,-1 25,4 6,2 15,9 18,11l3 56 53 23c1,1 2,1 3,2 0,0 1,1 2,1l5 4c4,2 7,3 11,5 40,19 50,3 86,-2 35,-6 4,-3 26,-9 26,-8 98,-2 129,-2 21,0 36,0 50,16 10,12 4,11 9,24 9,22 -8,-9 6,9l9 10c22,23 60,15 88,23 11,3 -2,2 14,4 12,1 51,5 61,0l14 -16c10,-12 18,-11 29,-23l104 -95c17,-14 28,-30 52,-19 0,0 1,1 2,1 19,9 -6,-1 7,4l37 7c20,5 24,-11 33,-28l17 -31c20,-39 4,-33 38,-51l4 -3c1,0 2,-1 3,-1 15,-12 32,-15 50,-23l69 -33c9,-6 9,-3 19,-7 12,-5 4,-5 23,-15 18,-9 26,-8 43,-20 14,-9 38,-14 55,-16 60,-3 114,-19 175,-12 6,1 2,0 8,2 11,3 18,10 27,17l7 6c21,19 32,22 62,52 10,10 14,23 22,34 12,15 35,52 38,67l6 33c10,28 16,85 23,96l8 25c4,21 6,10 12,33 5,19 2,13 9,29l12 31c4,9 7,20 11,29l17 26c15,18 30,62 44,85l6 13c10,20 40,43 62,45 70,5 95,-26 165,14 1,0 2,1 3,1 14,9 28,7 47,9 69,4 231,-12 272,1 48,16 105,2 138,13 1,0 2,0 2,1l38 18c25,12 73,9 104,8 2,-16 0,-32 -2,-49 -3,-16 -8,-21 -11,-40 -57,-26 -44,-9 -67,-24l-25 -19c-41,-29 -31,-7 -69,-42 -18,-17 -35,-37 -32,-66 4,-2 9,-4 14,-7l5 -3c1,-1 2,-1 2,-2 2,-1 7,-4 7,-4 0,-95 31,-40 18,-135 -72,-13 -42,-29 -74,-65 -2,-1 -6,-6 -6,-6l-12 -14c-24,0 -51,11 -71,-3l-5 -4c0,0 -1,-1 -2,-2 -21,-23 1,-15 -40,-44l-37 -34c-22,-2 -42,1 -61,-6l-26 -4c-17,1 -37,4 -49,-8l-5 -7c-12,-14 -25,-16 -41,-27l-17 -15c-28,-4 -72,9 -93,-11l-24 -26c-12,-9 -36,-13 -50,-22l-28 -28c-6,-12 -8,-24 -20,-32 -17,-10 -35,-2 -54,-13 -1,-1 -2,-1 -3,-2l-34 -26c-13,-14 -6,-28 -20,-56 -4,-8 -2,-4 -4,-7l-31 -61c-13,-30 6,-64 33,-80l38 -26c4,-20 -3,-25 -11,-41l-3 -5c-7,-16 4,9 -4,-8 -40,1 -71,22 -103,-1 -32,-24 -38,1 -60,-15l-10 -13c-2,-3 -3,-10 -5,-15 -16,-41 -5,-58 1,-97 -42,-5 -16,21 -76,-7 -24,-10 -25,11 -35,31 -10,17 -11,34 -31,43 -1,0 -2,1 -3,1l-7 2c-42,10 -96,15 -137,5 -1,0 -17,-5 -18,-5 -11,-4 -12,-5 -18,-7 -7,-2 -13,-3 -19,-5l-27 -13c-1,-1 -2,-2 -2,-2 -1,-1 -2,-2 -3,-2l-27 -20c-7,-8 -7,-18 -12,-29l-2 -5c-33,-66 15,-202 -17,-247 -23,-3 -16,5 -34,15l-36 21c-21,16 -45,25 -68,39 -1,0 -2,1 -3,1l-46 25c-16,11 -45,17 -66,-2l-6 -6c-12,-6 -17,-2 -27,8z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="13" data-title="خوزستان">
+                  <path class="cls-1"
+                    d="M1454 3867c7,2 12,2 19,5 15,5 1,-1 16,11 5,78 2,82 -25,142 -1,3 -2,6 -3,9l-5 7c0,1 -1,2 -1,2l-61 55c-11,7 -4,2 -14,9l-15 11c3,30 23,59 41,85 29,44 24,42 16,94 -5,37 -24,95 -27,116l-9 39c-7,23 -5,183 -4,211l140 0c1,36 -2,195 6,210l9 10c0,0 1,1 2,1 0,1 1,2 2,2 8,5 26,8 56,27l43 35c3,6 3,7 7,13l24 43c0,1 2,5 2,6l3 5c0,1 1,2 1,3l32 55c7,16 17,25 33,34l29 16c36,28 47,-3 75,-17 1,0 4,-2 5,-2l31 -23c1,-29 9,-64 -2,-92 -1,-1 -1,-2 -2,-3l-2 -6c-10,-27 -24,-48 -19,-77 18,-2 25,4 40,14 2,1 5,3 8,4l34 25c25,17 69,10 98,11l7 43c7,5 9,5 34,0 79,-16 46,37 76,47 16,5 19,-4 30,-11 2,-1 9,-5 11,-6l35 -24c6,-4 9,-6 17,-11 9,-5 9,-6 16,-12 22,-20 68,-13 98,-13 8,-34 34,-80 72,-56l18 13c5,3 14,8 18,10l27 4c6,-11 0,-12 8,-23 15,-25 35,-27 -6,-61l-31 -33c-15,-15 -15,-25 -12,-51l58 0c-8,-22 -9,3 -59,-48 -1,0 -2,-1 -3,-2 0,0 -2,-1 -2,-2l-40 0c-3,-5 -4,-9 -8,-15 -8,-13 -3,6 -8,-15 -3,-13 -1,-32 -4,-47 -26,-5 -25,12 -49,18 -42,11 -46,-6 -69,-28 -15,-15 -22,-34 -8,-53 11,-15 1,-5 20,-13 6,-39 -4,-17 -8,-44 -5,-40 -21,-49 17,-85 20,-19 23,-8 45,-9 6,-6 8,-10 13,-16l22 -26c3,-3 5,-6 6,-9 7,-27 -2,-36 22,-59l28 -28c8,-7 16,-8 13,-22 -3,-17 -51,-69 -65,-91 -16,-26 -18,-47 -46,-65l-26 -22c-1,-1 -2,-2 -2,-2 -12,-11 -16,-22 -29,-31 -13,-8 -29,-10 -37,-23 -24,-37 9,-50 -41,-102 0,-1 -1,-2 -2,-2 0,-1 -1,-2 -1,-2l-91 -89c-17,-14 -6,-16 -30,-31 -4,-3 -14,-10 -16,-11l-16 -15c10,-11 12,-11 9,-32 -23,-6 -10,2 -27,-14 -34,-33 -35,-5 -108,-31 -15,-5 -2,-2 -14,-5l-47 -2c-31,4 -29,26 -56,-4 -10,-12 -17,-22 -31,-11l-8 8c-10,9 -6,7 -25,5l-7 -24c-40,-7 -81,18 -126,-3l-11 -6c-16,-8 -18,-2 -27,11l-38 46c-8,10 -7,5 -15,16 -17,27 3,28 1,53 -1,4 -5,20 -7,25 -6,15 -17,25 -31,33 -9,6 -14,6 -17,18z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="1" data-title="آذربایجان شرقی">
+                  <path class="cls-1"
+                    d="M455 790c-18,-1 -22,19 -35,29 -1,1 -2,2 -2,2 -1,1 -2,1 -3,2 -9,8 -16,11 -20,24 -3,8 -2,10 -3,17 -4,10 -7,1 -8,26l2 108c6,6 -1,0 5,5 36,33 22,42 -25,73 -1,1 -2,1 -3,2l-30 20c-1,0 -2,1 -3,1 -9,9 -8,21 -9,33 33,2 79,-9 102,10l23 20c28,20 41,99 36,118 -3,8 -1,2 -4,7l-19 22c0,0 -15,8 -15,8l-19 7c-1,17 2,34 12,47 12,16 19,12 32,3 11,-8 8,-9 16,-12 18,-7 25,5 40,12 9,4 26,10 34,18l13 15c4,4 0,2 7,6 3,1 6,2 9,3l1 20c-32,17 -33,9 -46,20 0,21 15,23 24,38l22 27c15,11 23,24 35,40l14 27c2,11 0,10 -6,17 -1,1 -5,4 -6,5l-48 -2 -2 33c21,6 57,6 72,24l47 49c20,20 7,25 19,47 25,7 48,-12 65,-29l25 -23c14,-11 -7,-3 17,-9l7 14c2,7 0,8 1,13 11,2 17,4 28,3 17,-1 13,-3 25,-6 9,-2 15,-3 23,-5 28,-9 53,-17 72,15 9,14 5,28 3,44 1,1 2,1 2,2 2,7 8,7 9,22 0,16 1,23 3,39 19,5 19,20 42,-3l4 -4c1,0 2,-1 2,-2 45,-41 33,-3 63,-20l54 -46c1,-1 3,-3 4,-4 14,-14 33,-17 47,-29 4,-4 6,-6 10,-9 15,-14 22,-31 42,-38 14,-6 26,-1 41,-3 33,-3 37,-53 81,-34l26 11 23 -26c19,-19 39,-17 57,-27 1,-14 2,-4 -2,-14 -6,-10 -23,-14 -29,-23l-12 -23c-5,-10 -1,-18 -6,-30 -6,-13 -19,-16 -27,-25l-19 -36c-4,-18 -27,-39 3,-69l32 -30 -21 -15c-6,-3 -7,-2 -12,-5 -4,-2 -4,-3 -11,-8 -1,0 -2,-1 -2,-1 -1,-1 -2,-1 -3,-2 -15,-6 -43,-3 -50,-5 -11,-3 -6,-1 -11,-5 6,-24 25,-26 41,-39l-3 -5c0,0 -1,-1 -1,-2l-3 -4c-20,-22 -41,-29 -40,-65 1,-27 7,-28 -5,-36 -1,0 -2,-2 -3,-1l-11 0c-1,1 -10,6 -14,7 -67,33 -96,11 -150,-25l-38 -40c24,-27 14,-19 49,-39l22 -21c11,-12 10,-14 9,-36 -2,-65 48,-35 20,-60 -8,-8 -21,-9 -28,-17 -10,-11 -7,-26 -4,-42 4,-4 8,-7 12,-11 1,0 2,-1 2,-1 33,-23 60,-8 21,-56 -2,-2 -5,-6 -6,-7 -30,-51 12,-93 -11,-151l-35 -48c-17,0 -14,-2 -25,7l-59 51c-3,2 -7,6 -9,8 -2,2 -6,5 -8,7 -25,23 -55,41 -79,64 -3,3 -2,2 -9,8 -8,5 -3,1 -10,6 -29,17 -47,49 -72,71l-13 9c-28,10 -65,-10 -94,-1 -16,5 0,-1 -10,6 -46,33 -71,14 -117,9 -37,-4 -46,-1 -79,-17l-88 -39c-20,-9 -4,-11 -17,-16z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="12" data-title="خراسان شمالی">
+                  <path class="cls-1"
+                    d="M4394 1356l-29 15 -2 43c26,-7 12,-12 28,-11 14,0 12,5 16,16 6,16 3,41 8,56 5,13 18,22 11,46l-12 23c-5,13 -3,5 -3,30 41,0 60,-31 92,-8 26,19 41,50 58,77 43,2 53,21 80,-8 19,-21 38,1 66,-30 18,-20 28,-39 56,-48 17,-6 33,-10 53,-10 37,1 65,-6 94,17 17,14 19,-1 34,-3 22,-3 32,10 49,20 20,12 41,8 62,8 27,0 17,6 26,11 22,13 43,-13 91,20 1,1 4,3 5,3 0,1 1,2 2,2l25 19c18,10 53,12 76,18l54 31c1,1 2,1 3,2 8,3 5,2 14,3 4,-22 0,-30 12,-45 3,-4 13,-7 6,-27 -7,-20 9,11 -4,-7 -7,-9 -9,-6 -10,-24 -2,-18 -2,-33 4,-47 5,-13 6,-12 16,-18 1,-1 2,-1 2,-2 1,0 2,-1 3,-1 1,-1 2,-1 2,-2 21,-14 36,-37 43,-57 6,-16 5,-23 6,-44 -3,-7 -22,-16 -29,-18l-19 -5c-22,-7 5,7 -14,-9 -22,-19 -29,-45 -21,-73 5,-18 4,-26 15,-36l11 -10c15,-17 8,-36 -3,-55l-22 -26 -34 -5c-3,-23 -6,-26 8,-40 11,-12 17,-16 19,-36 -45,-1 -109,10 -141,-17 -4,-3 -4,-4 -8,-8 -1,-1 -7,-8 -7,-8 -9,-10 1,-1 -11,-9l-54 -19c-16,-6 -35,-11 -50,-16l-64 -8c-35,-14 -91,-7 -133,-9 -2,-6 -4,-8 -7,-14l-7 -18c-5,-16 -8,-21 -11,-43l-42 -31c-16,-14 -14,-40 -37,-10 -12,17 -17,24 -59,12 -21,-7 -97,-30 -113,-26 -24,6 4,4 -21,11l-67 17c-26,10 -20,22 -42,58 -6,11 -3,-1 -5,11 -3,16 18,29 20,66 1,22 2,34 -14,47l-22 21c-27,40 -14,65 -28,97 -6,14 -3,-8 -7,19 -2,11 0,16 -4,29 -3,10 1,-1 -3,8 -29,67 -8,33 -11,85z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="20" data-title="کردستان">
+                  <path class="cls-1"
+                    d="M543 2132c-1,25 3,43 -9,55 -8,8 0,1 -8,8 -7,5 -65,32 -9,74 5,4 5,5 9,7 27,21 40,48 77,36 14,-5 5,-6 27,-8 26,-2 65,-7 84,7 19,15 45,22 63,41 26,27 -15,32 -35,35l-55 17c-3,35 -25,94 4,121l17 15c14,13 5,7 15,22 0,0 1,1 1,2l10 11c12,14 11,3 18,28 16,2 24,4 37,11l39 41c23,27 19,12 40,56 4,7 7,17 11,24 8,13 23,21 36,28 22,10 11,3 22,18 0,0 1,1 2,2l5 7c12,16 22,31 47,26 29,-4 40,1 65,-2l5 -8c1,-1 2,-2 2,-3l3 -5c9,-14 10,-9 13,-25 3,-15 1,-22 12,-33l13 -10c6,-4 15,-7 23,-11l109 -59c31,-4 59,0 89,8 11,3 2,0 12,4 15,5 15,11 26,25 24,32 28,21 51,1 21,-18 -17,12 5,-4 18,-13 47,-5 71,-9 4,-39 5,-23 -4,-46l-69 -104c0,-1 -1,-1 -1,-2 -12,-13 4,4 -4,-4 -5,-5 -11,-11 -14,-15l-5 -6c-19,-25 -42,-56 -25,-88l10 -14 48 -2 19 -19c1,0 2,-1 3,-1 9,-7 3,-8 19,-12 8,-2 16,-1 23,-5 -1,-22 -24,-21 -37,-31l-6 -5c-1,-1 -2,-1 -3,-2 -14,-14 -23,-72 -44,-63 -11,4 -3,0 -10,15l-21 0c-2,-16 -4,-40 0,-56 2,-12 -1,-2 2,-8 1,-1 1,-2 2,-3l10 -21c18,-37 7,-31 1,-58 -5,-19 -1,-43 -9,-56 -14,-22 -67,-23 -92,-26 -40,-4 -12,-28 -93,-25 -9,53 9,58 -43,76l-5 3c-25,9 -54,4 -74,-2 -19,-6 -42,-16 -56,-29l-6 -6c-7,-6 -7,-5 -13,-10 -11,-9 -18,-15 -24,-25 -22,-3 -49,-5 -70,1l-28 7c-9,1 -22,1 -34,1 -22,1 -37,11 -64,11 -39,1 -41,-18 -51,-26 -19,-14 -44,8 -51,12 -13,8 -13,-6 -14,23 0,28 4,36 -18,54 -7,7 -9,11 -21,14 -24,6 -50,0 -75,0z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="28" data-title="مرکزی">
+                  <path class="cls-1"
+                    d="M2282 2413c-36,2 -57,12 -92,14 -15,0 -38,2 -52,-2l-18 -6c-8,-2 -17,-1 -25,0l-32 55 -93 11c-7,14 -8,33 -5,48 1,4 7,15 8,16 7,7 4,3 14,9 1,0 2,1 3,1 13,7 45,18 22,52l-19 43c-6,22 -5,47 -14,69 -36,6 -31,-2 -53,25 0,0 -1,1 -2,2 0,1 -1,1 -2,2l-31 21c0,0 -1,1 -2,2 -4,5 -1,1 -6,9 -6,10 -9,13 -3,24 14,27 24,50 -7,74l-16 6 -15 66c-3,8 -7,17 -1,29 0,1 1,2 1,3l28 39c6,3 12,2 20,7 6,34 -20,25 6,51 32,32 17,49 -5,74l-7 7c-14,16 -40,-1 -48,-3 -4,7 -2,6 -8,10l0 32c24,6 21,16 19,44 -1,10 -3,20 0,30 2,10 8,18 14,20 15,6 9,-1 15,-6 29,-20 36,12 49,34 8,12 1,-2 7,11 22,1 24,-5 34,-19 8,-12 13,-31 23,-41 25,-25 25,8 38,21 18,-2 5,-3 15,-7l25 -8c2,0 13,-13 28,7l7 13c10,21 6,39 12,64 66,0 45,29 64,51 8,10 17,13 28,13 8,-14 10,-43 24,-51 19,-4 42,-1 53,-7l12 -9c0,0 1,-1 2,-2l13 -15c0,0 3,-3 4,-3l7 -6c0,0 1,-1 2,-1 9,-9 13,-15 26,-16 37,-4 22,1 48,-14 30,-17 33,6 61,-18l4 -4c14,-10 32,-14 48,-20 1,0 2,-1 3,-1 23,-10 56,-2 71,-8 1,-1 2,-3 2,-2l7 -6c34,-32 24,-29 27,-84l-14 -54c0,1 -3,-2 -5,-3 -17,-13 -31,-36 -43,-52l-15 -12c-1,-1 -2,-1 -3,-2 -1,0 -2,-1 -2,-1 -18,-8 -33,-3 -59,-17 -4,-2 4,-2 -10,-4 -24,23 -7,20 -46,32 -16,5 -28,22 -44,-16l-36 -65c-8,-8 -6,-8 -10,-32l-47 -6c-15,-5 -26,-15 -36,-27 -21,-25 -24,-72 -13,-102l7 -14c2,-11 -4,-35 6,-43 17,-13 44,-11 66,-6 19,4 31,29 48,35l2 -45 24 -15c17,-7 37,2 55,-2 11,-2 15,-5 14,-16 -3,-45 -31,-43 -5,-69l21 -33c9,-19 5,-16 20,-29l25 -15c3,-19 0,-59 3,-70 3,-9 -1,1 5,-9l5 -7c7,-12 8,-26 9,-40l-105 1c-3,-7 -5,-14 -8,-18l-17 -10c-25,-3 -57,7 -80,-4 -15,-7 -17,-13 -39,6 -9,8 -4,3 -11,14z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="26" data-title="لرستان">
+                  <path class="cls-1"
+                    d="M1259 3107c-4,28 -14,23 -28,36 0,19 5,19 13,31 20,30 35,73 16,106 -10,17 -20,24 -35,36 -1,1 -2,2 -2,2 -10,8 -6,8 -20,10 -29,4 -66,0 -99,3l-12 35c-4,9 -9,20 -16,30 -58,4 -30,-13 -62,-10 1,10 8,23 14,32 1,0 1,1 2,2 11,14 34,12 51,36l16 25c13,21 21,20 42,33 0,1 1,2 2,2l22 17c15,10 30,15 43,26l23 16c28,21 59,38 86,61l15 13c0,1 1,2 2,2l62 23c18,9 27,21 45,29 18,8 35,15 35,37 -6,23 -1,5 -11,21 -10,17 -20,64 15,57 14,-29 -4,-45 5,-73 0,-1 1,-2 1,-3 0,-1 1,-1 1,-2l4 -5c16,-24 38,-41 54,-64 20,-29 28,-40 66,-22 46,21 96,-5 112,7 15,10 16,20 37,10 4,-2 11,-22 33,-1 8,8 3,4 8,9 35,38 42,-20 126,16l5 3c28,14 65,-5 107,37 8,8 29,23 46,19 8,-2 16,-11 22,-18 9,-9 17,-15 10,-28 -17,-32 -28,-70 2,-100 2,-1 14,-12 15,-13 25,-12 20,12 46,11 10,-1 15,-3 16,-12 2,-17 0,-5 -9,-18 -13,-18 -11,-52 10,-62 11,-5 14,-6 21,-17 11,-14 13,-22 8,-38 -17,-9 -37,3 -57,-17 -14,-13 -14,-33 -29,-46 -6,-6 1,-2 -10,-6 -5,-2 -11,-3 -15,-5 -15,-5 -25,-11 -30,-25 -6,-17 -2,-35 -7,-53 -16,-2 -27,9 -81,8 -9,16 -10,21 -22,30 -59,42 -59,-6 -85,-25 -26,7 -13,14 -40,13 -11,-15 -26,-38 -25,-73 1,-24 0,-25 -9,-42 -11,-19 -6,-19 -9,-42 -20,-2 -30,1 -43,-10l-27 -22c-1,-1 -2,-2 -3,-3 -29,10 -35,4 -63,10 -12,10 -4,8 -14,19 -38,42 -85,9 -96,6 -17,-6 -12,-1 -26,-12l-6 -6c0,0 -1,-1 -2,-1l-44 -39c-8,-6 -17,-10 -22,-15 -14,-14 -6,-12 -46,-22 -34,-8 -36,-20 -54,-45 -13,-17 2,-14 -20,-13 -15,35 11,20 -27,55l-24 27 -29 7z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="22" data-title="کرمانشاه">
+                  <path class="cls-1"
+                    d="M669 3216l-1 -7c-1,-30 27,-38 54,-29 12,4 0,1 14,5l29 10c18,10 42,12 58,18 42,15 69,55 110,73 26,12 41,25 71,21 15,-1 10,0 19,-6 31,-20 41,-32 81,-35l80 -10 1 -45 40 -28c-2,-24 -19,-21 -13,-52l21 -7c9,-50 8,-28 40,-42 2,-1 14,-10 16,-12 36,-27 18,-45 38,-74 16,-11 32,4 42,17 18,26 30,19 54,-4 13,-12 7,-9 15,-22l8 -11c15,-19 18,-50 14,-78 -21,-5 -61,7 -79,-9l-6 -8c-13,-20 -6,-36 -8,-57 -4,-31 -16,-6 -11,-47 17,-14 17,-7 33,-16 0,-26 -14,-14 -31,-39l-12 -17c-23,-19 -55,-13 -87,-13 -83,-2 -58,14 -109,40 -14,7 -21,11 -41,12 -2,22 -2,-1 -8,24 -3,14 -3,23 -11,35 0,1 -1,2 -1,3l-15 21c-21,23 -49,4 -76,12 -51,14 -48,-32 -97,-62 -36,-22 -42,-31 -65,-74l-12 -25c-5,-9 1,-1 -6,-9 -1,-1 -1,-1 -2,-2 -1,-1 -2,-1 -2,-2 -22,-20 -44,-43 -76,-39 -6,11 -10,26 -14,37l-17 35 -73 -3 -4 58c-2,20 2,6 -7,17l-40 48c-13,13 -33,30 -28,53 4,25 21,41 16,74 -33,3 -42,-7 -75,-7 -3,13 -5,34 -9,46 -4,15 -13,28 -14,45l28 11c5,18 3,100 -2,116 -1,1 -1,2 -1,3 -7,16 -14,15 -24,30l-11 17c-9,13 -8,9 -6,25 5,3 8,5 13,8l92 52c0,1 1,1 2,2l26 9c3,-7 1,-3 3,-9 3,-7 3,-9 8,-16l20 -26c-18,-14 -22,-16 -20,-45 15,-2 38,-7 54,-2 14,4 9,-3 14,12z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="27" data-title="مازندران">
+                  <path class="cls-1"
+                    d="M2334 1766c0,24 -2,26 -5,42 -3,14 -2,34 -3,50l68 43c1,0 4,2 5,3 1,0 2,1 3,1 0,1 1,1 2,2l32 23c1,0 2,1 2,2 1,0 2,1 2,2l5 3c13,9 37,7 46,20 15,22 -23,38 16,57 0,1 1,1 2,2 1,0 5,2 6,2l23 11c26,9 19,2 39,18 33,24 111,-9 154,14 9,5 15,8 25,11l20 11c16,14 26,11 53,27 16,10 36,14 52,28 29,26 16,42 39,68 6,6 15,11 22,14 21,10 33,16 64,15 6,0 9,0 16,-2 13,-3 25,-11 35,-22l17 -17c4,-3 9,-7 11,-10l9 -11c12,-15 24,-23 43,-29 1,-1 2,-1 3,-1 19,-8 7,-12 61,-11 21,0 37,12 55,21 25,12 16,23 56,19 9,-5 12,-20 19,-29l4 -4c1,-1 5,-6 5,-6l48 0 13 -28c0,0 1,-1 1,-2 45,-71 86,-38 110,-58 30,-23 41,-1 60,-19 11,-11 8,-20 20,-31l11 -10c28,-27 48,-18 31,-60 -2,-6 -3,1 -6,-16 -7,-34 22,-40 43,-54 12,-8 7,-6 22,-14l23 -15 -2 -32c-1,-1 -4,-3 -5,-3l-20 -11c-22,-9 -44,-6 -67,-8l-15 -19c-10,-13 -7,-7 -10,-29 -29,-2 -67,-1 -91,-8 -35,-10 -123,-7 -163,6 -17,6 2,3 -20,9 -6,1 -14,1 -20,4l-7 4c-25,14 1,-4 -29,11 -53,27 -117,45 -131,52l-4 3c-1,0 -2,1 -2,1l-145 51c-1,0 -2,1 -3,1l-6 2c-46,21 -38,12 -58,19l-5 3c-24,12 -20,11 -45,4 -16,-5 -32,-3 -47,-7l-55 -19c-28,-9 -67,-11 -106,-26 -15,-5 -32,-3 -46,-7 -30,-8 -23,-11 -62,-14 -22,-2 -19,-9 -37,-14 -9,-3 -10,-2 -19,-7 -1,-1 -2,-2 -3,-2l-51 -33c-6,-4 -3,-2 -9,-6l-18 -11c-11,-7 -26,-19 -43,-3l-4 4c-10,11 -23,15 -34,25z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="7" data-title="بوشهر">
+                  <path class="cls-1"
+                    d="M2393 5101l14 10c7,8 -4,-3 4,4l31 33c18,19 -7,-6 6,6l64 55c28,24 32,35 66,62l26 24c5,4 1,0 7,6l6 6c3,5 2,3 4,9 7,28 2,95 14,116l15 21c9,10 14,19 29,21 15,2 30,0 47,2 4,31 14,43 12,75l-29 6 10 48c33,5 59,-4 72,25 14,31 9,18 17,56 2,13 7,15 10,24 12,27 14,76 34,103l44 54c9,11 17,17 22,30 14,38 -41,19 35,89 0,1 1,1 2,2 0,1 1,1 2,2 20,19 39,22 63,35 2,1 6,4 8,5 14,7 20,13 37,16 27,6 60,0 88,-1 19,0 40,-3 58,4 11,4 -1,-1 9,4l117 69c20,8 58,1 82,5l23 30c31,51 59,50 46,106l23 17c12,5 16,8 24,16 26,-20 24,-20 61,-27 1,-12 -7,-19 -13,-30 -17,-28 -34,-17 -51,-36l-16 -21c-19,-13 -52,-8 -77,-54 -5,-9 -9,-11 -13,-22 -8,-24 -6,-42 -23,-61l-37 -70c-11,-15 -34,-2 -52,-16 -2,-1 -5,-3 -7,-5l-65 -95c-9,-21 -20,-43 -23,-66 -3,-16 -2,-20 -13,-33 -16,-19 -3,-30 -12,-51 -6,-13 -5,-2 -11,-27 -6,-27 -2,-4 -13,-22 -9,-16 -1,-47 -5,-69 -6,-12 -30,-1 -37,-48l-3 -16c-1,-2 -5,-9 -5,-10 -13,-19 -12,-5 -27,-33l-4 -5c-14,-27 -8,-30 -32,-51l-91 -123c-27,-27 -65,4 -85,-19l-26 -26c-14,-11 -20,-28 -9,-49 0,-1 1,-1 1,-2 5,-8 13,-4 7,-32 -18,2 -14,7 -32,8 -35,4 -35,-19 -61,-28 -20,-6 -21,2 -34,8 -1,0 -3,-2 -3,-1l-12 -4c-22,-6 -23,16 -101,-2 -19,-5 -6,4 -17,-8 -1,0 -4,-7 -4,-7 -5,-13 3,-19 5,-27 3,-13 2,-10 1,-23 -45,-9 -5,9 -44,10 -35,-46 -13,-96 -12,-106 1,-11 1,-6 -3,-12 -11,-18 -31,-6 -53,-11 -14,-3 -12,-7 -40,-23 -14,-8 -24,-19 -43,-1 -9,8 -9,2 -11,23 -3,22 0,105 3,128z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="14" data-title="زنجان">
+                  <path class="cls-1"
+                    d="M1466 1631c-1,1 -3,4 -3,5l-39 40c-25,17 -52,-20 -81,3 -40,33 -23,30 -86,29 -3,8 -6,12 -11,18l-24 23c-2,1 -7,6 -9,7 -9,6 -14,5 -22,10l-73 62c-6,10 -9,21 -7,33l36 45c14,13 22,22 22,43 0,21 0,40 1,61 24,6 35,-1 57,0 24,1 23,12 43,20 21,8 46,0 68,11l8 4c9,3 12,3 24,7 16,5 23,17 29,32 5,15 4,35 10,54 4,12 12,35 1,54 -13,22 -19,11 -16,45 20,0 30,13 41,30l31 62c25,1 43,8 61,25 0,1 1,2 2,2 0,1 1,1 2,2l23 12c41,5 36,-15 50,19 9,22 36,17 57,17 37,0 50,-1 48,-39 0,-11 -2,-24 -6,-31 -8,-11 -20,-9 -14,-40 4,-21 1,-4 7,-13 1,-1 1,-2 2,-3 0,0 1,-1 1,-2l3 -5c9,-17 45,-73 70,-53l16 21c23,25 43,3 59,-14l8 -8c3,-3 5,-6 8,-8 10,-8 0,-1 12,-7 1,-1 2,-1 3,-2 1,0 2,0 3,-1 25,-13 34,-11 58,-30 6,-4 4,-4 12,-7 1,-11 2,-23 -1,-34 -13,-45 -4,-50 -9,-93 -74,-54 -37,-20 -88,-42l-41 -27c-13,-9 0,-2 -21,-10l-9 -3c-17,-9 -19,-18 -16,-38 2,-24 18,-41 30,-59 5,-9 2,-3 5,-7 8,-11 17,-29 26,-34 7,-3 1,-2 10,0 11,2 16,6 28,5 0,-21 -3,-25 -15,-38 -1,0 -2,-1 -2,-2 -19,-19 -32,-46 -49,-67 -10,-13 -30,-50 -43,-52 -26,2 1,1 -17,6 -21,6 -37,-17 -62,-11 -31,8 -31,46 -82,11l-7 -6c-8,-8 0,-1 -3,-4 -1,0 -2,-1 -2,-2l-15 -20c-12,-21 -32,-24 -54,-14 -13,7 -31,6 -48,8z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="6" data-title="ایلام">
+                  <path class="cls-1"
+                    d="M668 3209l1 7 -47 3 -1 16 35 14c1,0 2,1 3,2 0,43 -31,4 -51,50 -17,39 -64,44 -34,70l122 128c34,45 -5,32 52,60 10,5 2,0 8,4 12,10 11,20 9,34l-31 17c0,0 -1,1 -2,1 -5,2 -9,4 -13,6 0,6 -1,6 2,13 0,1 1,2 1,3 5,9 18,12 25,16l0 37 110 -2c7,1 9,9 14,14l78 61c1,1 2,1 2,2 1,0 10,10 10,10l16 13c0,1 1,1 2,2l90 72c32,30 25,12 57,47 40,45 85,-2 109,10 18,10 45,80 62,101l9 15c1,1 1,2 2,3 4,7 0,1 4,7l19 36c1,1 2,2 2,3 1,0 1,1 2,2 14,16 24,13 44,1 1,-1 2,-1 3,-2l33 -29c1,-1 10,-1 18,-14l24 -32c18,-31 14,-79 15,-113 -18,-2 -49,-14 -40,-37 10,-23 20,2 22,-20 2,-17 1,-7 -7,-13l-5 -3c-6,-3 0,0 -9,-4 -9,-83 23,-60 19,-84 -1,-9 -20,-20 -30,-24 -6,-3 -14,-7 -19,-9l-27 -13c-11,-5 -27,-2 -37,-7 -21,-10 -40,-27 -57,-41 -8,-7 -4,-4 -8,-8 -19,-17 -58,-40 -79,-54l-99 -75c0,-1 -1,-1 -2,-2l-27 -32c-19,-30 -21,-7 -67,-61 -8,-10 -2,2 -7,-10 -7,-18 2,-20 12,-26 1,0 2,-1 3,-2 1,0 1,-1 3,-1 12,-5 19,1 27,4 11,4 18,2 30,1 8,-17 8,-38 21,-53 31,-36 97,4 133,-26l21 -30c6,-7 8,-8 9,-18 3,-16 -3,-28 -12,-35 -10,-7 -19,0 -39,2 -2,24 5,33 -3,58 -27,12 -39,11 -74,11 -35,1 -58,9 -86,28 -5,3 -9,6 -14,9 -27,16 -48,5 -75,-5 -10,-4 -21,-6 -33,-14l-31 -21c0,0 -7,-5 -7,-5 -5,-4 -1,-1 -6,-6 -5,-4 -2,-1 -7,-5 -26,-23 -43,-28 -77,-41 -1,-1 -2,-1 -3,-2l-62 -18c-30,-12 -22,-2 -55,4z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="24" data-title="گلستان">
+                  <path class="cls-1"
+                    d="M3629 1459c2,25 13,58 17,77 7,25 5,63 15,79 18,4 39,1 58,-1 21,-3 45,-2 67,0 2,24 3,13 -10,27l-77 52c-12,5 -3,0 -13,6 0,0 -1,1 -2,1 -43,27 -64,14 -56,53 25,3 51,-1 72,15 1,0 2,1 2,2l15 9c9,7 18,18 22,30 75,7 53,-17 98,-20 25,-2 42,12 52,-18 4,-12 3,-25 13,-35 9,-8 21,-15 35,-15 4,5 1,2 5,9 2,5 2,6 4,9 2,4 4,7 11,11 6,-3 6,-3 11,-8l42 -34c0,-1 1,-2 2,-2 2,-3 3,-3 6,-6 19,-19 37,-43 59,-56 3,-2 6,-4 8,-5 6,-4 2,-3 6,-4 17,-8 39,0 59,-11 15,-8 -6,-4 17,-6 23,-1 22,8 58,-30 0,0 1,-1 2,-2 10,-10 22,-14 17,-32 -5,-23 -20,-30 20,-85 2,-3 3,-4 5,-7 4,-7 2,-2 6,-10 17,-29 -13,-42 7,-72 20,-30 54,-39 90,-38 -4,-20 -9,-28 -1,-48l6 -14c1,-1 3,-5 3,-6 16,-31 11,-50 24,-83 7,-19 1,-47 13,-62 1,-1 2,-2 2,-2l30 -39c19,-23 16,-45 3,-72l-6 -12c-30,-1 -57,24 -144,15 -41,-5 -61,-10 -102,1 -14,4 -7,2 -13,6l-33 11c-8,6 -3,3 -9,10l-36 29c0,1 -1,1 -2,2 -2,1 -5,4 -6,5l-19 21c-7,7 -2,3 -11,9l-32 31c-1,1 -2,2 -2,2l-76 83c-3,3 -7,7 -9,26 -3,23 2,56 -9,76 0,0 -1,1 -1,2 -4,6 -2,3 -6,7 -1,0 -1,1 -2,2l-58 41c-1,1 -4,3 -5,3l-23 9c-34,17 -141,68 -174,67 -17,-1 -26,-5 -45,-3z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="30" data-title="همدان">
+                  <path class="cls-1"
+                    d="M1585 2389c-45,-2 -26,5 -63,-15 -11,4 -5,3 -13,9 0,1 -10,8 -10,8 -12,5 -26,2 -41,6 -15,10 5,26 -44,30 -18,2 -14,-3 -21,7 -11,11 -9,12 2,32l57 70c8,7 0,-1 4,4l36 44c26,34 37,61 20,104 -6,15 -13,15 -28,20 -19,7 -50,-2 -65,14 -2,2 -5,6 -6,7 1,18 8,30 -4,43 -7,7 -21,11 -27,21 7,27 12,-1 11,60l7 6c24,22 38,2 70,8 22,37 19,98 -11,130l-38 38c-8,8 -7,7 -5,21 37,8 38,4 68,29l14 13c1,1 2,2 2,2l16 13c7,6 -8,-9 4,4l8 9c10,11 21,12 35,19 21,10 35,21 62,20l16 -18c2,-2 6,-7 8,-8l15 -13c0,-1 1,-2 2,-2 14,-11 22,-5 43,-7 22,-3 28,-18 46,0 20,21 32,43 71,28 14,-6 1,-9 26,-8 27,2 1,5 28,8l6 -16c4,-9 1,2 3,-8 4,-18 -20,-28 -25,-42 -5,-16 1,-18 -1,-36l-14 -8c-24,-15 -34,-36 -32,-67l8 -43c9,-23 2,-37 13,-64l34 -4c1,-47 -36,-39 -9,-80 4,-7 0,-2 8,-9l68 -55c7,-5 15,-7 23,-12l8 -40c3,-8 2,-6 4,-16l11 -29c7,-13 -1,6 3,-5 7,-20 -3,-25 -17,-37l-25 -27c-1,-2 -2,-2 -5,-7 -8,-19 6,-42 2,-57 -5,-14 2,-2 -10,-13 -2,-2 -6,-6 -6,-6l-8 -7c-17,-1 -33,3 -47,-7 -14,-10 -13,-13 -19,-32 -33,-6 -20,-11 -39,-20 -2,-1 -6,-2 -9,-3l-20 -12c-14,-9 -32,-18 -50,-21 -1,14 2,31 -5,43 -14,22 -31,21 -57,21 -24,0 -59,5 -76,-11 -6,-5 -7,-1 -12,-26z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="8" data-title="تهران">
+                  <path class="cls-1"
+                    d="M169,168.52c0.43,0.07-.59,1.77-0.38,1.91,3.89,1.73,2.23-1.15,7.7,1.66a9.24,9.24,0,0,0,4.25.5,6.33,6.33,0,0,1,2.88.14,0.26,0.26,0,0,0,.22.07c2.45,1.37,1.22,2.59.79,4a5.4,5.4,0,0,1-.36,1.15c-0.5,1-.29-0.58-0.58,1.15-0.29,2,.5,3.53.86,5.62,2.52,0.22,1.15-.29,2.81-0.65l3.46-.94c1.22,0.14.5,1,4.54,0.94,2.52,0,2.45,0,4.1,1.15l0.14,0.14c0.07,0.07.14,0.07,0.22,0.14l2.88,1.66c2.88,1.94,3.46.07,5,1.58l3.53,2.74c1.08,0.94,1.8,1.94,2.81-.29,0.72-1.44,1.73-2.3,1.3-4.1a2.85,2.85,0,0,0-1.08-1.8l-2.66-2.74c-0.94-1-2.66-2.38-2.38-3.74a1,1,0,0,1,.36-0.72c2.38-4.25-.65-2.88.36-7.06,0.43-1.66,1.22-3.6,3.17-3.67l1,2.23a2.16,2.16,0,0,0,.29.72c0.72,1,1.22.94,3,1.3A7.77,7.77,0,0,1,221,174c2,1.94,3.31,1.94,5.26,0l5-5.62c0.58-1.08-.29.43,0.22-0.36a4.88,4.88,0,0,0,.43-0.65l2.3-.14a3.41,3.41,0,0,1,.79-1.15c1.08-1,.22.29,1.08-1.15l2.16-2.52a6.67,6.67,0,0,0,1-1c1.3-1.37,3.6-1.37,3.53-3.17-3.53,0-5.26.65-7.85-1a0.27,0.27,0,0,1-.14-0.14l-0.5-.36c-2.74-2.09-7.49-2.3-9.94.43l-0.29.29-0.14.14-1.94,2.09c-0.94.94-2,2.3-3.31,2.66-2.38.79-6.62,0.29-8.5-1.58l-1.08-.94A9.44,9.44,0,0,1,207.5,157c-0.58-1.22-.65-2.09-2-2.45-0.36-.14-0.36-0.07-0.72-0.22l-5-1.78s-0.53,10.75-6,9.13c-0.07,0-2.37-.71-2.37-0.71-1.59,1.76-.76.86-1.71,1.84l-0.75,1.08-2,2.5-4.12.42L169,168.52"
+                    transform="scale(13.9)"></path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="3" data-title="اردبیل">
+                  <path class="cls-1"
+                    d="M1163 592c-1,14 -2,7 2,15 0,0 9,10 9,10l28 38c4,9 3,7 7,15 11,21 8,60 2,84 -5,24 -3,14 3,36 14,55 39,60 10,86 -10,10 -24,10 -35,15l-1 36c13,4 23,7 33,13 15,9 18,14 15,34l-35 6c-8,45 10,46 -20,79 -12,13 -26,20 -41,31 -4,4 -2,2 -6,6 -8,8 -3,3 -8,10 4,9 8,12 13,16l57 36c19,5 60,6 79,-5l5 -3c12,-10 3,-3 11,-17 26,-5 27,1 42,18 10,11 1,2 11,10 3,49 -12,55 24,89 31,29 8,26 5,55l10 3c17,6 41,9 55,20 1,1 2,2 2,2l20 14c1,14 1,12 -5,21 -14,19 -40,21 -42,51 0,19 7,21 21,24l-6 12c0,1 -1,2 -1,3 -3,8 -2,1 -3,13l25 21c0,0 1,1 2,2l5 6c26,30 9,18 19,49 3,5 3,5 7,9 13,17 33,28 52,35l53 39c4,5 4,6 7,10 39,50 62,-13 114,3 19,5 11,8 29,8 5,-38 0,-56 -19,-88 -5,-9 -3,-6 -12,-13l-59 -55c-1,-1 -2,-2 -2,-2 -8,-10 -4,-26 -10,-47 -2,-6 0,-2 -4,-8l-19 -13c-2,-29 12,-29 12,-59 -1,0 -6,-3 -7,-4 -28,-18 -34,-17 -27,-57 2,-13 3,-10 5,-13l16 -50c9,-50 38,-103 -9,-144l-13 -11 -3 -64c-15,-12 -26,-25 -37,-42 -27,-5 -43,-4 -59,-26 -42,-60 -24,-29 -63,-60l-7 -6c-17,-19 -44,-48 -32,-80 20,-7 69,-5 86,-24 17,-18 25,-34 9,-58 -4,-5 -6,-7 -9,-11 -5,-7 -4,-5 -8,-12 -1,-1 -3,-3 -3,-4 -2,-3 -4,-6 -5,-8l-9 -11c-31,-33 -16,-23 9,-52l6 -6c4,-5 0,-1 6,-6 9,-9 15,-14 10,-26 -9,-19 -24,-35 -39,-48l-13 -11c-8,-8 -1,-1 -8,-9l-27 -28c-1,-1 -3,-3 -4,-4 -7,-7 -2,-2 -7,-9l-15 -17c-24,0 -54,7 -73,21l-18 13c-9,9 -14,11 -23,20l-11 10c-5,4 -7,5 -12,8 -26,18 -39,41 -67,56z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="9" data-title="چهارمحال و بختیاری">
+                  <path class="cls-1"
+                    d="M2247 4023c6,8 41,23 53,37 8,10 3,9 13,18l16 12c14,11 25,14 37,27l12 19c6,13 11,30 19,42 0,1 1,2 1,3 1,0 2,1 2,2l40 51c1,1 1,2 2,3 0,1 1,2 1,2l27 33c0,1 1,2 1,3 3,9 2,6 3,14 -13,14 -5,7 -24,15 -21,9 -33,38 -54,53l-1 42 22 -2c3,-9 6,-11 13,-18l50 -31c17,-6 16,5 24,9 27,15 50,-18 87,28 9,13 6,13 13,26 11,0 25,-1 36,0 21,1 41,10 56,25l13 16c1,0 1,2 2,2 21,-1 43,3 60,-5 12,-6 2,-7 32,-8 9,-36 5,-24 -7,-46 -6,-10 -4,-11 -4,-22 -1,-26 -14,-38 -7,-63 17,-56 -10,-53 3,-79 11,-23 16,-2 17,-22 1,-16 -13,-11 -18,-23 -7,-15 7,-30 15,-37l19 -21c1,0 2,-1 2,-2 1,0 2,-1 2,-1 17,-20 -2,-36 -9,-55l-36 -60c0,-1 -1,-2 -1,-2 -1,-1 -2,-2 -2,-3l-4 -4c-1,-1 -1,-2 -2,-3l-44 2 -2 -45c-22,-16 -45,-19 -68,-34l-20 -14c-3,-44 6,-67 -18,-102l-27 -47c-25,-2 -39,5 -60,10 -17,4 -50,1 -62,10 -9,10 -1,7 -5,25 -4,21 -19,25 -34,35 -41,26 -50,12 -88,-20 -12,-10 -7,-11 -18,-18 -28,-1 -48,31 -77,17 -12,-6 -24,-28 -39,-36 -19,-10 -23,-23 -42,-33 -11,-5 -26,-13 -43,-7 -13,5 -24,17 -36,25 -9,6 -12,6 -15,12 -5,11 -4,9 12,24l137 137c42,45 16,29 25,84z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="18" data-title="قزوین">
+                  <path class="cls-1"
+                    d="M1828 1841l-17 32c-1,1 -3,4 -3,5 -1,0 -2,1 -2,2l-12 16c-8,13 -10,15 -9,33 17,5 30,15 46,25l63 25c81,34 65,49 67,106l1 95c-7,5 -6,4 -13,10 -1,0 -1,1 -2,2 0,0 -1,1 -2,2l-97 54c-11,10 1,7 -12,15 -15,6 -38,3 -51,-4l-12 -8c-22,-15 -35,-4 -57,28l-6 27c4,14 6,5 10,25 18,0 46,10 59,21l41 26c2,1 7,4 10,5 5,2 6,2 12,5l32 33c4,8 -1,4 6,12 14,1 32,-2 45,4 21,10 14,19 26,23 13,3 19,-8 44,-7 17,1 35,1 52,3 0,-1 1,-3 2,-3l20 -27c0,-1 1,-2 1,-3 1,-1 1,-2 1,-3l11 -14c27,-28 48,1 104,-2 8,-1 56,-10 62,-13 1,-44 -6,-33 10,-67l9 -19c4,-8 1,-1 4,-8 3,-7 3,-21 7,-31l8 -17c1,-1 1,-2 2,-3 7,-12 17,-14 27,-24 17,-18 0,-43 14,-66 14,-5 13,-2 28,-4 10,0 4,1 14,-2l35 -25c6,-8 5,3 6,-17 -6,-4 2,0 -9,-3 -4,-1 -5,-1 -9,-2 -20,-5 -32,-20 -47,-33 -10,-9 -19,-15 -21,-30l6 -29c14,-22 40,-6 65,-14 19,-6 28,1 40,14l32 0 2 -38c-13,-11 -40,-23 -58,-35l-65 -39c-13,-6 -25,-19 -37,-23 -5,-2 -78,-5 -85,-3 -18,7 -18,27 -40,31 -18,3 -42,-3 -68,1 -7,2 -8,13 -35,19 -43,11 -28,-9 -88,-11l-35 -12c-10,-6 -8,-20 -15,-29 -9,-12 0,-2 -8,-8 -11,-9 -21,-12 -32,-24 0,-1 -3,-3 -3,-4 -11,-9 -16,-8 -28,-1 -6,4 5,6 -18,8 -8,1 -19,-1 -28,-2z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="23" data-title="کهگیلویه و بویر احمد">
+                  <path class="cls-1"
+                    d="M2353 4452c-42,7 -76,-4 -63,47 2,4 2,9 3,13l4 9c9,19 8,37 6,59 -15,9 -35,19 -24,38 0,1 1,2 1,3l6 6c59,46 75,-35 104,-9 2,2 3,4 5,7 20,25 -3,63 34,66 32,3 37,-3 46,37 17,2 29,2 40,12l16 20c18,45 -21,36 -47,38 -3,19 2,22 14,30 25,18 48,14 36,78 -5,28 -32,36 9,60 48,28 21,48 20,50 -5,9 -9,29 -1,40 9,13 15,2 27,-1 10,-2 10,-1 18,-2 24,-4 72,-14 79,-31 1,-17 -3,-38 1,-52 3,-11 20,-26 28,-28 41,-9 43,17 83,-25 17,-18 31,-60 12,-78 -18,-16 -14,-20 -26,-33l-13 -12c-7,-8 -15,-20 -16,-32 -3,-46 50,-64 84,-31 11,11 21,15 29,29 6,10 5,23 6,36 21,-8 3,-12 36,-11 5,10 10,16 16,27 18,1 38,-2 55,3 8,3 70,56 58,-37 -1,-8 -2,-25 0,-33 5,-16 10,-10 22,-18l-14 -17c-9,-9 -9,-4 -22,-10l-64 -32c-37,-16 -17,-34 -55,-44 -22,-5 -30,-19 -47,-32 -12,-9 -14,-15 -22,-27 -14,-24 -10,-20 -16,-46 -4,-15 -3,-45 -22,-50 -37,0 -1,13 -48,13 -20,0 -41,1 -61,-1 -6,-34 -5,-30 -31,-44 -19,-10 -42,-4 -61,-15 -10,-6 -13,-17 -18,-25 -23,-33 -40,-7 -66,-14 -7,-2 -13,-7 -13,-7 -9,-5 13,-5 -12,-4 -17,1 -49,26 -60,37 -24,25 -55,-8 -71,29 -2,6 -2,8 -5,14z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="25" data-title="گیلان">
+                  <path class="cls-1"
+                    d="M1608 1324c10,10 23,16 38,20 2,22 2,31 0,52 -1,29 5,30 9,49 7,36 5,46 41,67 18,11 15,8 26,26 19,29 37,36 37,77 0,30 -3,22 15,38l83 108c8,10 4,7 10,18 11,17 17,12 30,22l28 28c42,38 22,18 50,59 30,4 46,-4 72,9 8,3 -4,3 16,6 7,1 12,0 19,-2 6,-2 19,-10 26,-13 30,-17 46,-2 74,-6 24,-3 22,-13 32,-28 0,0 7,-9 8,-10 19,-2 29,2 41,5 7,3 15,3 23,3 19,-1 27,-4 29,-26 1,-26 -10,-33 -6,-72l33 -18c40,-29 14,-28 -11,-51l-14 -13c-18,-15 -36,-25 -51,-42 -3,-4 -14,-16 -15,-20 -1,0 -1,-1 -2,-2 0,-1 -1,-2 -1,-3 -7,-18 -12,-31 -13,-52 -25,-10 -23,-9 -52,-13 -40,-5 -24,-33 -96,-28 -123,8 -166,-4 -258,-65l-76 -96c-23,-25 -18,-92 -22,-125 -6,-44 -12,-63 -14,-113 -1,-10 -1,-20 -3,-29 0,-1 -3,-11 -3,-12l-6 -16c-38,-2 -29,17 -60,14l-18 -10c-4,-5 -5,-16 -24,-17 -9,65 35,14 37,90 2,64 -4,71 -12,124 -2,15 -6,16 -11,32 -4,14 -7,19 -9,35z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="19" data-title="قم">
+                  <path class="cls-1"
+                    d="M2480 2725c-72,18 -48,4 -86,3 -7,20 -4,-1 -8,18 -2,11 1,15 -1,26 -4,17 -19,24 -40,23 -13,-6 -13,-46 -78,-37 3,54 -29,70 0,125 3,7 3,7 6,10 33,43 39,9 70,25l9 8c4,3 7,4 11,6 4,46 -1,21 25,64 1,1 3,4 4,5l4 4c0,1 1,2 1,2 13,17 4,15 12,29 17,-1 21,0 30,-14 5,-9 3,-10 14,-21 17,-16 25,1 34,5 13,6 33,2 50,9 17,8 11,11 23,17 9,4 3,3 16,4l24 -40c4,-21 -7,-36 0,-64l24 -19c11,-10 0,-3 15,-9l17 -6c48,-9 53,10 104,-13 17,-8 -2,-2 14,-9 15,-6 28,0 43,-6 25,-9 -5,-12 33,-12 17,0 31,1 48,-1 1,-1 5,-6 5,-7 1,-1 2,-2 2,-2l8 -12c1,-1 4,-8 4,-8 7,-18 2,-24 11,-46 1,-1 2,-4 3,-5l11 -28c9,-45 -2,-54 -18,-65 -21,-17 -14,-2 -41,-31 -19,-20 -7,-18 -45,-17 -19,0 -30,-3 -47,-14 -1,0 -2,-1 -3,-2l-24 -15c-65,-47 -67,-1 -99,-29 0,0 -1,-1 -2,-2 -18,-15 -40,-8 -60,3 -1,1 -10,13 -43,12 -6,0 -6,0 -12,-2 -11,-4 -17,-27 -39,-8l-4 4c-6,9 2,-4 -4,8 -3,5 -2,7 -5,11 -4,8 -4,7 -10,13l-11 14c0,1 -1,1 -1,2 -15,32 14,18 6,94z">
+                  </path>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="2" data-title="آذربایجان غربی">
+                  <g class="cls-1">
+                    <path
+                      d="M-44 618c-2,24 1,52 6,70 6,21 -1,12 16,23 45,29 13,54 24,99l25 60c13,26 2,51 -1,74 -1,7 5,61 7,75 2,20 8,53 17,63 22,22 26,17 49,31 2,18 0,22 -6,37l-34 61c-6,10 -6,14 -10,24 -8,20 -39,60 -28,81 4,9 22,19 29,27 3,3 4,4 6,6l7 5c18,14 36,20 54,35l6 5c5,4 -2,0 9,6l20 8 0 139 49 55c13,20 5,76 6,103l48 21c13,20 -22,49 2,96 4,7 1,3 6,10 10,16 20,17 35,28 32,21 11,49 2,95 -3,14 15,80 37,88 69,25 57,-16 78,85l15 54c4,10 1,-4 5,11 3,15 -5,34 6,45 9,8 14,4 28,3 7,-27 1,-38 24,-51l13 -7c1,0 3,-1 3,-1 1,-1 2,-1 3,-2 7,-100 29,-59 83,-64 13,-1 14,-2 23,-8l18 -12c3,-28 -13,-33 0,-54 12,-19 36,-23 56,-32 1,0 2,-1 3,-1l4 -3c15,-7 22,-2 29,4l9 8c37,30 38,9 73,6 22,-2 44,0 67,-3 108,-18 97,-3 168,50 27,19 46,21 83,20 18,0 39,-6 41,-26 2,-12 -15,-48 -17,-64 -5,-28 11,-65 -16,-84l-26 -22c-5,-4 -3,-2 -6,-6 -9,-10 -15,-47 -32,-49 -21,-2 -13,37 -76,31 -6,-11 -3,-7 -12,-17 -28,-33 -9,-41 -30,-76 9,-29 19,-18 -1,-46 -50,-6 -48,20 -112,19 -32,0 -13,-6 -36,-10 -15,9 1,3 -15,13l-55 33c-49,15 -54,-65 -83,-90 -47,-39 -92,-20 -99,-47 -3,-10 0,-21 -6,-30 -3,4 -6,24 -24,51 -15,22 -3,36 -16,58 -14,0 -19,-6 -30,-13 -19,-13 -41,-16 -54,-36 -4,-6 -1,-3 -5,-8l-27 -41c-8,-13 -9,-60 -16,-90 -12,-46 -3,-102 -12,-127 -9,-28 -3,-32 -36,-56l-23 -14c-18,-10 -22,-22 -24,-30 -2,-12 7,-22 13,-29l19 -26 32 -2 2 -49 -58 -1c-3,-6 -4,-6 -9,-10 -1,-14 2,-19 8,-25l5 -3c0,-1 1,-2 2,-2 0,0 1,-1 2,-2 0,-16 -3,-38 3,-53 15,-36 90,-60 84,-86 -3,-10 -14,-6 -21,-29l-4 -11c-6,-43 -3,-141 37,-167 20,-13 31,-34 27,-64 -2,-8 -32,-38 -40,-46l-69 -82c-12,-18 -27,-32 -37,-50l-99 -125c-19,-21 -28,-18 -48,1 -1,0 -2,1 -2,2l-14 14c-18,29 -7,132 -44,139 -11,2 -46,2 -60,2 -22,1 -31,6 -53,8z">
+                    </path>
+                    <path
+                      d="M268 1202l6 17 23 5c7,9 -2,-10 0,0 3,11 -18,23 -19,35 -35,18 24,34 5,39 -11,4 -14,11 -21,17 -9,9 19,25 22,38l19 31c7,5 7,-16 31,9l12 5c10,16 10,59 9,79 0,12 -2,65 2,77 4,13 10,61 34,103 31,55 83,105 111,105l23 -78c-14,-24 20,5 18,-7 0,-3 -51,-20 -48,-33 10,4 19,-4 29,-8 19,-7 38,-35 51,-51l37 0c-1,-12 -9,-27 -21,-38 -22,-20 -12,-16 -26,-30 -41,-42 -5,-9 -34,-41 -1,-1 -3,-3 -4,-4 -23,-37 32,-38 35,-48 3,-13 -18,-19 -44,-32l-6 -3c-13,-6 -14,-17 -31,-3 -18,15 -17,29 -34,22 -2,-1 -6,1 -16,-12 -8,-11 -18,-42 -19,-53 -6,-38 44,-49 50,-58 10,-15 -7,-77 -12,-91 -5,-14 -6,-11 -19,-21l-14 -10c0,0 -1,-1 -2,-2 -1,0 -1,-1 -2,-1 -22,-17 -95,-14 -134,-12 -3,6 -12,29 -11,54z">
+                    </path>
+                  </g>
+                </a><a class="mapostan" href="javascript:void()" data-ostanid="5" data-title="البرز">
+                  <path class="cls-1"
+                    d="M2726 2227c28,-80 41,-120 41,-120 -45,-24 -77,-38 -95,-35 -46,6 -77,5 -94,-3 -46,-14 -77,-28 -92,-41 -24,5 -45,7 -52,0 -14,-16 -24,-11 -35,-4 -17,2 -31,1 -42,-4 -6,24 2,39 19,51 10,7 22,14 38,18 29,6 27,26 -5,57 -22,20 -35,28 -40,26 -18,2 -26,3 -26,3 2,37 -7,62 -28,74 -16,15 -24,31 -27,49 -2,16 -7,31 -12,44 2,28 -2,35 11,29 8,-4 14,-6 20,-8 8,-3 15,-3 26,0 -10,-25 2,-38 34,-37 145,-15 218,-23 218,-23 41,-51 61,-76 61,-76 53,0 80,0 80,0z">
+                  </path>
+                </a>
+              </svg>
+              <p style="z-index:10; position:fixed; text-align:center;" id="besideMouse"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- ====Iran map End ====== -->
+
+
+    
+  <!-- Footer Start -->
+  <section id="" class="bg-black" style="border-radius: 32px 32px 0 0;">
+    <div class="container">
+      <!-- Mobile Footer -->
+      <div class="accordion d-lg-none py-5 px-4 " id="accordionPanelsStayOpenExample">
+        <div class="accordion-item bg-black text-white border-0">
+          <h2 class="accordion-header bg-black">
+            <button class="accordion-button bg-black text-white" style="box-shadow: none;" type="button"
+              data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne">
+              تماس با ما
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <div class=" text-white">
+                <div>
+                  <div class="d-flex">
+                    <iconify-icon icon="material-symbols:location-on-outline-rounded" class="mt-1"
+                      style="margin-left: 8px;font-size:22px;"></iconify-icon>
+                    <p>تهران - کیلومتر 10 جاده خاوران - روبروی توتک - پلاک 2456</p>
+                  </div>
+                  <div class="d-flex ">
+                    <iconify-icon icon="material-symbols:call-outline-sharp" class="mt-1"
+                      style="margin-left: 8px;font-size:22px;"></iconify-icon>
+                    <p>021-38467000</p>
+                  </div>
+                  <div class="d-flex">
+                    <iconify-icon icon="material-symbols:deskphone-outline" class="mt-1"
+                      style="margin-left: 8px;font-size:22px;"></iconify-icon>
+                    <p> 021-38467000 داخلی 8</p>
+                  </div>
+                  <div class="d-flex">
+                    <iconify-icon icon="material-symbols:attach-email-outline" class="mt-1"
+                      style="margin-left: 8px;font-size:22px;"></iconify-icon>
+                    <p>sales@ksp-group.ir</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-black text-white border-0">
+          <h2 class="accordion-header bg-black">
+            <button class="accordion-button collapsed bg-black text-white" style="box-shadow: none;" type="button"
+              data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo">
+              نمایشگاه ها
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <div>
+                <p>
+                  سومین نمایشگاه بین المللی صنعت - تهران _شهرآفتاب شهریور ماه 1402
+                </p>
+                <p>
+                  سومین نمایشگاه بین المللی صنعت - تهران _شهرآفتاب شهریور ماه 1402
+                </p>
+                <p>
+                  سومین نمایشگاه بین المللی صنعت - تهران _شهرآفتاب شهریور ماه 1402
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-black text-white border-0">
+          <h2 class="accordion-header bg-black">
+            <button class="accordion-button collapsed bg-black text-white" style="box-shadow: none;" type="button"
+              data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree">
+              مطالب مهم سایت
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <div>
+                <p>
+                  شرکت کیتامورا Kitamura تولید کننده انواع فرز cnc عمودی ، افقی ، دروازه ای و فرز پنج محور و ... ، ژاپن
+                </p>
+                <p>
+                  شرکت کیتامورا Kitamura تولید کننده انواع فرز cnc عمودی ، افقی ، دروازه ای و فرز پنج محور و ... ، ژاپن
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Desktop Footer -->
+      <div class="d-none d-lg-flex  py-5 gap-4 flex-wrap">
+        <div class="col-2 text-white align-self-center">
+          <div class="d-flex align-items-center ">
+            <div>
+              <img src="assets/img/kspLogo.png" />
+            </div>
+            <h5>
+              خاوران صنعت پاسارگاد
+            </h5>
+          </div>
+          <p>
+            تمام حقوق مادی و معنوی این وبسایت متعلق به خاوران صنعت پاسارگاد می باشد.
+          </p>
+        </div>
+        <div class="col-3 text-white">
+          <p class="text-center">
+            تماس با ما
+          </p>
+          <div>
+            <div class="d-flex">
+              <iconify-icon icon="material-symbols:location-on-outline-rounded" class="mt-1"
+                style="margin-left: 8px;font-size:22px;"></iconify-icon>
+              <p>تهران - کیلومتر 10 جاده خاوران - روبروی توتک - پلاک 2456</p>
+            </div>
+            <div class="d-flex ">
+              <iconify-icon icon="material-symbols:call-outline-sharp" class="mt-1"
+                style="margin-left: 8px;font-size:22px;"></iconify-icon>
+              <p>021-38467000</p>
+            </div>
+            <div class="d-flex">
+              <iconify-icon icon="material-symbols:deskphone-outline" class="mt-1"
+                style="margin-left: 8px;font-size:22px;"></iconify-icon>
+              <p> 021-38467000 داخلی 8</p>
+            </div>
+            <div class="d-flex">
+              <iconify-icon icon="material-symbols:attach-email-outline" class="mt-1"
+                style="margin-left: 8px;font-size:22px;"></iconify-icon>
+              <p>sales@ksp-group.ir</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 text-white">
+          <p class="text-center">
+            نمایشگاه ها
+          </p>
+          <div>
+            <p>
+              سومین نمایشگاه بین المللی صنعت - تهران _شهرآفتاب شهریور ماه 1402
+            </p>
+            <p>
+              سومین نمایشگاه بین المللی صنعت - تهران _شهرآفتاب شهریور ماه 1402
+            </p>
+            <p>
+              سومین نمایشگاه بین المللی صنعت - تهران _شهرآفتاب شهریور ماه 1402
+            </p>
+          </div>
+        </div>
+        <div class="col-3 text-white">
+          <p class="text-center">
+            مطالب مهم سایت
+          </p>
+          <div>
+            <p>
+              شرکت کیتامورا Kitamura تولید کننده انواع فرز cnc عمودی ، افقی ، دروازه ای و فرز پنج محور و ... ، ژاپن
+            </p>
+            <p>
+              شرکت کیتامورا Kitamura تولید کننده انواع فرز cnc عمودی ، افقی ، دروازه ای و فرز پنج محور و ... ، ژاپن
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex  justify-content-center justify-content-lg-end gap-2 pb-3 flex-wrap">
+        <div class="d-flex align-items-center justify-content-center "
+          style="width: 34px;height: 34px; border-radius: 50%;background-color: #fff;">
+          <iconify-icon icon="material-symbols:call-outline-sharp" class=" text-black"
+            style="font-size:22px;"></iconify-icon>
+        </div>
+        <div class="d-flex align-items-center justify-content-center "
+          style="width: 34px;height: 34px; border-radius: 50%;background-color: #fff;">
+          <iconify-icon icon="material-symbols:attach-email-outline" class=" text-black"
+            style="font-size:22px;"></iconify-icon>
+        </div>
+        <div class="d-flex align-items-center justify-content-center "
+          style="width: 34px;height: 34px; border-radius: 50%;background-color: #fff;">
+          <iconify-icon icon="iconoir:facebook" class=" text-black" style="font-size:22px;"></iconify-icon>
+        </div>
+        <div class="d-flex align-items-center justify-content-center "
+          style="width: 34px;height: 34px; border-radius: 50%;background-color: #fff;">
+          <iconify-icon icon="simple-icons:aparat" class=" text-black" style="font-size:22px;"></iconify-icon>
+        </div>
+        <div class="d-flex align-items-center justify-content-center "
+          style="width: 34px;height: 34px; border-radius: 50%;background-color: #fff;">
+          <iconify-icon icon="mdi:instagram" class=" text-black" style="font-size:22px;"></iconify-icon>
+        </div>
+        <div class="d-flex align-items-center justify-content-center "
+          style="width: 34px;height: 34px; border-radius: 50%;background-color: #fff;">
+          <iconify-icon icon="iconoir:telegram" class=" text-black" style="font-size:22px;"></iconify-icon>
+        </div>
+        <div class="d-flex align-items-center justify-content-center "
+          style="width: 34px;height: 34px; border-radius: 50%;background-color: #fff;">
+          <iconify-icon icon="ant-design:youtube-outlined" class=" text-black" style="font-size:22px;"></iconify-icon>
+        </div>
+      </div>
+      <p class="text-center text-white d-lg-none pb-3 m-0">
+        تمام حقوق مادی و معنوی این وبسایت متعلق به خاوران صنعت پاسارگاد می باشد.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer End -->
+
+  <!-- Hidden div containing the language item -->
+  <div class="d-none" id="languageItems">
+    <div class="d-flex flex-column align-items-end gap-2">
+      <div class="d-flex align-items-center gap-2">
+        <div>فارسی</div>
+        <img src="assets/img/svgs/emojione_flag-for-iran.svg" />
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <div>انگلیسی</div>
+        <img src="assets/img/svgs/emojione_flag-for-united-kingdom.svg" />
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade " id="deviceshoverModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen" style="height: 85vh;">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <div class=" container d-flex justify-content-between align-items-center pt-2">
+            <div class="d-flex gap-2 ">
+              <a href="#" class=" d-none d-md-block text-black">درباره ما</a>
+            </div>
+            <div class="d-lg-flex gap-4 d-none text-black">
+              <a class="text-black  " href="/">صفحه اصلی</a>
+              <div class="dropdown-center ">
+                <a class="p-1 dropdown-toggle  text-black modalMenuItem " role="menubar" style="background-color: none;"
+                  data-bs-toggle="dropdown" aria-expanded="false" id="mfkmr" data-modal="devices">
+                  محصولات
+                </a>
+              </div>
+              <div class="dropdown-center">
+                <a class="p-1 dropdown-toggle text-black modalMenuItem" role="menubar" data-bs-toggle="dropdown"
+                  aria-expanded="false" data-modal="contents">
+                  مطالب سایت
+                </a>
+              </div>
+              <a href="#" class="text-black ">کاتالوگ</a>
+              <a href="#" class="text-black ">تصاویر 360 درجه</a>
+            </div>
+            <div class="d-none d-md-block">
+              <img src="assets/img/kspLogo.png" />
+            </div>
+          </div>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body">
+          <div id="devices" class="targetModal" style="display: none;">
+            <div class="container bg-white d-flex py-5 justify-content-center ">
+              <div class="col-5 d-flex flex-wrap  menu_devices align-content-start text-black" style="height: 300px;">
+                <div data-img="assets/img/image1.png"><a href="product-filter.html">دریل و دریل رادیال</a></div>
+                <div data-img="assets/img/image2.png"><a href="product-filter.html">دستگاه چند منطوره</a></div>
+                <div data-img="assets/img/image3.png"><a href="product-filter.html">خط کش و مانیتور دیجیتال</a></div>
+                <div data-img="assets/img/image1.png"><a href="product-filter.html">ماشین های سنگ زنی</a></div>
+                <div data-img="assets/img/image2.png"><a href="product-filter.html">Swiss Type</a></div>
+                <div data-img="assets/img/image3.png"><a href="product-filter.html">بورینگ</a></div>
+                <div data-img="assets/img/image1.png"><a href="product-filter.html">دستگاه برش لیزر-پانچ</a></div>
+                <div data-img="assets/img/image2.png"><a href="product-filter.html">ماشینهای EDM</a></div>
+                <div data-img="assets/img/image3.png"><a href="product-filter.html">تجهیزات و ابزارآلات صنعتی</a></div>
+                <div data-img="assets/img/image1.png"><a href="product-filter.html">تزریق پلاستیک</a></div>
+                <div data-img="assets/img/image2.png"><a href="product-filter.html">پرس</a></div>
+                <div data-img="assets/img/image3.png"><a href="product-filter.html">محصولات کارکرده</a></div>
+                <div data-img="assets/img/image1.png"><a href="product-filter.html">تراش رزوه زن لوله و مته های نفتی</a>
+                </div>
+
+              </div>
+              <div class="col-1 mx-5" style="width: 1px;height: auto;background-color: #D9D9D9;"></div>
+              <div class="col-5">
+                <div class="new__devices  gap-4 flex-wrap " style="display: flex;">
+                  <div class="d-flex flex-column align-items-center">
+                    <img src="assets/img/image 2.png" />
+                    <p>تراش CNC</p>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <img src="assets/img/image 5.png" />
+                    <p>فرز اونیورسال</p>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <img src="assets/img/image 6.png" />
+                    <p>تراش اونیورسال</p>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <img src="assets/img/image 3.png" />
+                    <p>فرز CNC</p>
+                  </div>
+
+                </div>
+                <div class="image-container   animate__animated animate__bounce">
+                  <img id="hovered-image" src="" alt="Hovered Image" class="animate__animated animate__bounce">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contents" class="targetModal" style="display: none;">
+            <div class="container bg-white d-flex py-5 justify-content-center ">
+              mjgrjgpj
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a class="dropdown-item py-1 px-2" href="/products-list.html"
+            style="border: 1px solid red; width: fit-content;border-radius: 4px;">نمایش همه محصولات</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+  crossorigin="anonymous"></script>
+
+    <script>
+      $('.preloader').delay(500).fadeOut(500);
+    </script>
+    <script
+      type="text/javascript"> window.RAYCHAT_TOKEN = "261f5560-7517-46bc-8527-7da78628bd46"; (function () { d = document; s = d.createElement("script"); s.src = "../../widget-react.raychat.io/install/widget.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+
+    <script type="text/javascript">
+      $(window).on('load', function () {
+        handlePreloader();
+    
+        function handlePreloader() {
+          if ($('.preloader').length) {
+            $('.preloader').delay(500).fadeOut(500);
+          }
+        }
+    
+      });
+    </script>
+    <script>
+      $('.mapostan').mouseover(function () {
+        var numItems = $('.ostan' + $(this).data('ostanid')).length;
+        loadingBM($(this).data("title") + '<br>(' + numItems + ')');
+      });
+    
+      $('.mapostan').click(function () {
+        $('.ostanDiv').hide(1000);
+        var numItems = $('.ostan' + $(this).data('ostanid')).length;
+        if (numItems > 0)
+          $('.ostan' + $(this).data('ostanid')).show(1000);
+        else
+          $('.ostan0').show(1000);
+        $('.ostanTitle').html($(this).data("title"));
+      });
+    
+      $('.mapostan').mouseout(function () {
+        loadingBM("");
+      });
+      $('.mapostan').click(function () {
+        window.location.href = $(this).attr("href");
+      });
+      function loadingBM(txt) {
+        $("#besideMouse").html(txt);
+      }
+    
+      $(document).ready(function () {
+        $(document).mousemove(function (e) {
+          var cpos = { top: e.pageY + 20, left: e.pageX + 10 };
+          $('#besideMouse').offset(cpos);
+        });
+        $('#start').click(function () { loadingBM($(this).data("title")); });
+      });
+    
+    </script>
+</body>
+</html>
