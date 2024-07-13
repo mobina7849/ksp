@@ -26,3 +26,47 @@ a {
 a {
     cursor: pointer;
 }
+
+a:hover {
+    color: #DE2910;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+.subtitle1 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #393C41;
+
+}
+
+.subtitle2 {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #393C41;
+
+}
+
+.body1 {
+    font-size: 0.875rem;
+    font-weight: 800;
+}
+
+.body2 {
+    font-size: 0.75rem;
+    font-weight: 800;
+}

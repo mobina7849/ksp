@@ -1,20 +1,3 @@
-import { CountUp } from '../../node_modules/countup.js/dist/countUp.min.js';
-
-window.addEventListener('load', () => {
-  const option1 = {
-    duration: 3,
-    useGrouping: false,
-    enableScrollSpy: true
-  }
-
-  let countup1 = new CountUp('countup1', 10, option1)
-  let countup2 = new CountUp('countup2', 70, option1)
-  let countup3 = new CountUp('countup3', 5, option1)
-  countup1.start()
-  countup2.start()
-  countup3.start()
-})
-
 
 // menuPopover languages
 document.addEventListener('DOMContentLoaded', function () {
@@ -63,12 +46,15 @@ document.addEventListener('DOMContentLoaded',function(){
       var modalElement=document.getElementById(modaltype)
       modalMenuItems.forEach(function(item){
         item.style.background='none'
+        item.style.color='#000'
       })
       targetModals.forEach(function(item){
         item.style.display='none'
       })
       modalElement.style.display='block'
-      item.style.background='#F2F2F2'
+      item.style.background='#ED1C24'
+      item.style.color='#fff'
+      item.style.boederRadius='4px'
 
     });
   });
@@ -101,3 +87,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+(function($) {
+    // CounterUp
+    $('.count').countUp();
+
+})(window.jQuery);
